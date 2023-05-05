@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  О компании
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Продукция
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Комплексное оснащение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Решения
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Портфолио
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main role="main">
+        <div class="owl-carousel" id="main-carousel">
+          <div class="main-slide">
+            <img src="img/main-slide-01.jpg" alt>
+            <div class="main-slide__title">Оснащение зала под ключ</div>
+            <a href="#" class="btn btn--green main-slide__btn">Выполненные проекты</a>
+          </div>
+          <div class="main-slide">
+            <img src="img/main-slide-01.jpg" alt>
+            <div class="main-slide__title">Оснащение зала под ключ</div>
+            <a href="#" class="btn btn--green main-slide__btn">Выполненные проекты</a>
+          </div>
+          <div class="main-slide">
+            <img src="img/main-slide-01.jpg" alt>
+            <div class="main-slide__title">Оснащение зала под ключ</div>
+            <a href="#" class="btn btn--green main-slide__btn">Выполненные проекты</a>
+          </div>
+        </div>
+        <section class="page-section">
+          <div class="container">
+            <div class="catalog-group">
+              <div class="catalog-group__row">
+                <div class="catalog-group__item catalog-group__item--big">
+                  <a href="#" class="catalog-group-card catalog-group-card--big">
+                    <div class="catalog-group-card__image">
+                      <img src="img/catalog-group-img-01.jpg" alt>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="catalog-group-card__title">Кресла</div>
+                  </a>
+                </div>
+                <div class="catalog-group__item catalog-group__item--big">
+                  <a href="#" class="catalog-group-card catalog-group-card--big">
+                    <div class="catalog-group-card__image">
+                      <img src="img/catalog-group-img-02.jpg" alt>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="catalog-group-card__title">Механика сцены</div>
+                  </a>
+                </div>
+                <div class="catalog-group__item">
+                  <a href="#" class="catalog-group-card">
+                    <div class="catalog-group-card__image">
+                      <img src="img/catalog-group-img-03.jpg" alt>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="catalog-group-card__title">Цепные лебедки</div>
+                  </a>
+                </div>
+                <div class="catalog-group__item">
+                  <a href="#" class="catalog-group-card">
+                    <div class="catalog-group-card__image">
+                      <img src="img/catalog-group-img-04.jpg" alt>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="catalog-group-card__title">Одежда сцены</div>
+                  </a>
+                </div>
+                <div class="catalog-group__item">
+                  <a href="#" class="catalog-group-card">
+                    <div class="catalog-group-card__image">
+                      <img src="img/catalog-group-img-05.jpg" alt>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="catalog-group-card__title">Электро- оборудование</div>
+                  </a>
+                </div>
+                <div class="catalog-group__item">
+                  <a href="#" class="catalog-group-card">
+                    <div class="catalog-group-card__image">
+                      <img src="img/catalog-group-img-06.jpg" alt>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="catalog-group-card__title">Щвейное производство</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h2>Наши преимущества</h2>
+            <div class="advantages">
+              <div class="advantages__list">
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <svg width="50" height="52" viewbox="0 0 50 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M46 15.6924L20.665 10.2888H40.4796H41.4796V9.28881V6.42404V5.42404H40.4796H7.25243H6.25243V6.42404V12.414V13.214L7.03288 13.3896L32.8699 19.204V51H15.1301V24.1387L24.3585 25.9894L24.0271 36.5649L21.8686 29.9855L19.9184 30.2972V45.8364V46.8364H20.9184H28.2427H29.2427V45.8364V22.9182V22.1066L28.4485 21.9396L2 16.3771V1H46V15.6924Z" stroke="#144A3A" stroke-width="2"/>
+                      <path d="M49 51H1" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="advantages__text">
+                    Ведущий производитель Российской Федерации
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <svg width="57" height="52" viewbox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.2053 1L20.1823 0.786833L20.0106 5.96046e-08H19.2053V1ZM16.7918 1V5.96046e-08H16.0145L15.8227 0.753321L16.7918 1ZM19.7576 3.53144L18.7806 3.74461L18.9303 4.43114L19.627 4.52288L19.7576 3.53144ZM22.2387 4.09746L21.9261 5.04736L22.5682 5.25866L23.0036 4.74154L22.2387 4.09746ZM23.9345 2.08339L24.37 1.18318L23.6702 0.844672L23.1695 1.43931L23.9345 2.08339ZM26.1071 3.13437L27.0794 3.36794L27.2675 2.58488L26.5425 2.23417L26.1071 3.13437ZM25.4966 5.67554L24.5243 5.44197L24.3606 6.12354L24.9454 6.50991L25.4966 5.67554ZM27.4347 7.22381L26.7427 7.94575L27.2301 8.41289L27.8456 8.13549L27.4347 7.22381ZM29.8562 6.13237L30.6384 5.50926L30.154 4.90127L29.4453 5.22069L29.8562 6.13237ZM31.36 8.02001L32.1355 8.65135L32.644 8.0268L32.1422 7.3969L31.36 8.02001ZM29.701 10.0579L28.9255 9.42651L28.4817 9.9717L28.8445 10.5739L29.701 10.0579ZM30.8118 12.3672L29.8739 12.7141L30.1076 13.346L30.781 13.3667L30.8118 12.3672ZM33.4769 12.4492L34.4531 12.2325L34.2846 11.4736L33.5076 11.4497L33.4769 12.4492ZM34 14.8053L34.4199 15.7129L35.1508 15.3747L34.9762 14.5885L34 14.8053ZM31.6062 15.9127L31.1863 15.0051L30.5488 15.3L30.61 15.9998L31.6062 15.9127ZM31.6129 18.251L30.6162 18.1698L30.5616 18.8394L31.1608 19.143L31.6129 18.251ZM33.9968 19.4592L34.9728 19.6772L35.1422 18.9186L34.4489 18.5672L33.9968 19.4592ZM33.4706 21.8145L33.4656 22.8145L34.2709 22.8186L34.4465 22.0326L33.4706 21.8145ZM30.8392 21.8014L30.8442 20.8014L30.1397 20.7979L29.8993 21.4601L30.8392 21.8014ZM29.7488 24.1056L28.8888 23.5954L28.5457 24.1736L28.9518 24.7095L29.7488 24.1056ZM31.3574 26.2282L32.1393 26.8516L32.6239 26.2438L32.1544 25.6243L31.3574 26.2282ZM29.8529 28.1153L29.4105 29.0121L30.1327 29.3684L30.6348 28.7387L29.8529 28.1153ZM27.5012 26.9553L27.9436 26.0585L27.3107 25.7463L26.8044 26.238L27.5012 26.9553ZM25.7244 28.414L25.1566 27.5908L24.6047 27.9716L24.7473 28.6267L25.7244 28.414ZM26.2878 31.0021L26.735 31.8965L27.4303 31.5489L27.2649 30.7894L26.2878 31.0021ZM24.1291 32.0813L23.3506 32.7089L23.856 33.3359L24.5763 32.9757L24.1291 32.0813ZM22.498 30.0576L23.2765 29.4301L22.8331 28.8799L22.1663 29.1142L22.498 30.0576ZM19.9639 30.6831L19.8182 29.6938L19.1865 29.7868L19.0051 30.399L19.9639 30.6831ZM19.2053 33.2434V34.2434H19.9519L20.1641 33.5275L19.2053 33.2434ZM16.7918 33.2434L15.833 33.5275L16.0452 34.2434H16.7918V33.2434ZM16.0375 30.6975L16.9963 30.4134L16.8134 29.7962L16.1758 29.7071L16.0375 30.6975ZM13.8461 30.2049L14.1451 29.2507L13.5362 29.0599L13.1067 29.5316L13.8461 30.2049ZM12.0659 32.1599L11.6304 33.0601L12.3026 33.3853L12.8053 32.8332L12.0659 32.1599ZM9.89332 31.1089L8.90649 30.9472L8.78568 31.684L9.45784 32.0091L9.89332 31.1089ZM10.3192 28.5111L11.3061 28.6729L11.41 28.039L10.8766 27.6809L10.3192 28.5111ZM8.5773 27.1248L9.2612 26.3952L8.79473 25.9579L8.20206 26.1978L8.5773 27.1248ZM6.14115 28.1109L5.35901 28.734L5.82427 29.318L6.51638 29.0379L6.14115 28.1109ZM4.63734 26.2233L3.81771 25.6504L3.38994 26.2624L3.8552 26.8464L4.63734 26.2233ZM6.13629 24.0788L6.95592 24.6517L7.32441 24.1245L6.9975 23.5706L6.13629 24.0788ZM5.12631 21.9755L6.0615 21.6214L5.8347 21.0224L5.19583 20.9779L5.12631 21.9755ZM2.52312 21.7941L1.54689 22.0109L1.70873 22.7398L2.4536 22.7917L2.52312 21.7941ZM2 19.4381L1.51484 18.5636L0.861929 18.9259L1.02377 19.6548L2 19.4381ZM4.28183 18.172L4.76699 19.0465L5.32739 18.7355L5.27897 18.0965L4.28183 18.172ZM4.28321 16.0532L5.28025 16.1301L5.32952 15.4911L4.76952 15.1794L4.28321 16.0532ZM2.00297 14.7841L1.02703 14.5661L0.864225 15.2948L1.51666 15.6579L2.00297 14.7841ZM2.5292 12.4288L2.46101 11.4311L1.71607 11.482L1.55326 12.2107L2.5292 12.4288ZM5.13278 12.2508L5.20098 13.2485L5.8399 13.2048L6.0675 12.6062L5.13278 12.2508ZM6.13921 10.1596L7.00021 10.6682L7.32737 10.1144L6.95904 9.587L6.13921 10.1596ZM4.64141 8.01507L3.8595 7.39168L3.39403 7.97551L3.82158 8.58767L4.64141 8.01507ZM6.14592 6.12798L6.5215 5.20119L5.82949 4.92076L5.36401 5.50459L6.14592 6.12798ZM8.58125 7.11488L8.20567 8.04167L8.79823 8.2818L9.26486 7.84472L8.58125 7.11488ZM10.1706 5.8334L10.7388 6.65628L11.2674 6.29127L11.1552 5.65876L10.1706 5.8334ZM9.71082 3.24122L9.26365 2.34677L8.59579 2.68067L8.72619 3.41587L9.71082 3.24122ZM11.8695 2.16201L12.6001 1.47916L12.0902 0.933668L11.4223 1.26756L11.8695 2.16201ZM13.6747 4.09337L12.9442 4.77621L13.38 5.24246L13.9864 5.04356L13.6747 4.09337ZM16.1476 3.53089L16.2779 4.52237L16.9496 4.43412L17.1167 3.77756L16.1476 3.53089ZM19.2053 5.96046e-08H16.7918V2H19.2053V5.96046e-08ZM20.7346 3.31828L20.1823 0.786833L18.2282 1.21317L18.7806 3.74461L20.7346 3.31828ZM22.5512 3.14757C21.6953 2.86592 20.8049 2.66073 19.8881 2.54L19.627 4.52288C20.4189 4.62717 21.1876 4.80434 21.9261 5.04736L22.5512 3.14757ZM23.1695 1.43931L21.4737 3.45339L23.0036 4.74154L24.6994 2.72746L23.1695 1.43931ZM26.5425 2.23417L24.37 1.18318L23.499 2.98359L25.6716 4.03457L26.5425 2.23417ZM26.469 5.90911L27.0794 3.36794L25.1347 2.9008L24.5243 5.44197L26.469 5.90911ZM28.1266 6.50187C27.4864 5.88828 26.7908 5.33196 26.0478 4.84116L24.9454 6.50991C25.5875 6.9341 26.189 7.41508 26.7427 7.94575L28.1266 6.50187ZM29.4453 5.22069L27.0237 6.31213L27.8456 8.13549L30.2671 7.04404L29.4453 5.22069ZM32.1422 7.3969L30.6384 5.50926L29.0741 6.75547L30.5779 8.64311L32.1422 7.3969ZM30.4765 10.6892L32.1355 8.65135L30.5845 7.38867L28.9255 9.42651L30.4765 10.6892ZM31.7497 12.0204C31.4288 11.1525 31.0284 10.3234 30.5576 9.54182L28.8445 10.5739C29.2513 11.2491 29.5969 11.9651 29.8739 12.7141L31.7497 12.0204ZM33.5076 11.4497L30.8426 11.3677L30.781 13.3667L33.4461 13.4488L33.5076 11.4497ZM34.9762 14.5885L34.4531 12.2325L32.5007 12.666L33.0238 15.022L34.9762 14.5885ZM32.026 16.8203L34.4199 15.7129L33.5801 13.8977L31.1863 15.0051L32.026 16.8203ZM32.6587 17.1217C32.6587 16.6852 32.6397 16.2529 32.6024 15.8257L30.61 15.9998C30.6422 16.3692 30.6587 16.7434 30.6587 17.1217H32.6587ZM32.6096 18.3323C32.6422 17.9329 32.6587 17.5291 32.6587 17.1217H30.6587C30.6587 17.4748 30.6444 17.8243 30.6162 18.1698L32.6096 18.3323ZM34.4489 18.5672L32.0649 17.3591L31.1608 19.143L33.5448 20.3512L34.4489 18.5672ZM34.4465 22.0326L34.9728 19.6772L33.0209 19.2411L32.4946 21.5965L34.4465 22.0326ZM30.8342 22.8014L33.4656 22.8145L33.4756 20.8146L30.8442 20.8014L30.8342 22.8014ZM30.6089 24.6158C31.0719 23.8352 31.4649 23.008 31.7791 22.1428L29.8993 21.4601C29.6281 22.2068 29.2888 22.921 28.8888 23.5954L30.6089 24.6158ZM32.1544 25.6243L30.5458 23.5016L28.9518 24.7095L30.5604 26.8322L32.1544 25.6243ZM30.6348 28.7387L32.1393 26.8516L30.5755 25.6048L29.071 27.4919L30.6348 28.7387ZM27.0588 27.8521L29.4105 29.0121L30.2953 27.2185L27.9436 26.0585L27.0588 27.8521ZM26.2922 29.2372C26.971 28.769 27.6085 28.2453 28.198 27.6726L26.8044 26.238C26.2946 26.7333 25.7434 27.1861 25.1566 27.5908L26.2922 29.2372ZM27.2649 30.7894L26.7015 28.2013L24.7473 28.6267L25.3107 31.2148L27.2649 30.7894ZM24.5763 32.9757L26.735 31.8965L25.8406 30.1076L23.682 31.1868L24.5763 32.9757ZM21.7194 30.6852L23.3506 32.7089L24.9077 31.4537L23.2765 29.4301L21.7194 30.6852ZM20.1095 31.6725C21.0477 31.5344 21.9574 31.3077 22.8296 31.0011L22.1663 29.1142C21.4137 29.3788 20.6286 29.5745 19.8182 29.6938L20.1095 31.6725ZM20.1641 33.5275L20.9227 30.9672L19.0051 30.399L18.2465 32.9593L20.1641 33.5275ZM16.7918 34.2434H19.2053V32.2434H16.7918V34.2434ZM15.0787 30.9816L15.833 33.5275L17.7506 32.9593L16.9963 30.4134L15.0787 30.9816ZM13.547 31.1591C14.3066 31.3972 15.0925 31.5753 15.8992 31.6879L16.1758 29.7071C15.479 29.6099 14.8005 29.4561 14.1451 29.2507L13.547 31.1591ZM12.8053 32.8332L14.5855 30.8782L13.1067 29.5316L11.3265 31.4867L12.8053 32.8332ZM9.45784 32.0091L11.6304 33.0601L12.5014 31.2597L10.3288 30.2087L9.45784 32.0091ZM9.33241 28.3494L8.90649 30.9472L10.8801 31.2707L11.3061 28.6729L9.33241 28.3494ZM7.89339 27.8543C8.47392 28.3985 9.09871 28.8962 9.76185 29.3414L10.8766 27.6809C10.3035 27.2961 9.76327 26.8658 9.2612 26.3952L7.89339 27.8543ZM6.51638 29.0379L8.95253 28.0517L8.20206 26.1978L5.76592 27.184L6.51638 29.0379ZM3.8552 26.8464L5.35901 28.734L6.92329 27.4878L5.41948 25.6002L3.8552 26.8464ZM5.31666 23.5059L3.81771 25.6504L5.45696 26.7962L6.95592 24.6517L5.31666 23.5059ZM4.19113 22.3297C4.48919 23.1167 4.85275 23.8714 5.27508 24.587L6.9975 23.5706C6.63264 22.9523 6.31875 22.3007 6.0615 21.6214L4.19113 22.3297ZM2.4536 22.7917L5.0568 22.9731L5.19583 20.9779L2.59263 20.7965L2.4536 22.7917ZM1.02377 19.6548L1.54689 22.0109L3.49934 21.5774L2.97623 19.2213L1.02377 19.6548ZM3.79667 17.2976L1.51484 18.5636L2.48516 20.3125L4.76699 19.0465L3.79667 17.2976ZM3.24219 17.1217C3.24219 17.5003 3.25652 17.8758 3.28469 18.2476L5.27897 18.0965C5.25461 17.7749 5.24219 17.4498 5.24219 17.1217H3.24219ZM3.28617 15.9763C3.25702 16.3545 3.24219 16.7364 3.24219 17.1217H5.24219C5.24219 16.7878 5.25504 16.4571 5.28025 16.1301L3.28617 15.9763ZM1.51666 15.6579L3.7969 16.927L4.76952 15.1794L2.48928 13.9103L1.51666 15.6579ZM1.55326 12.2107L1.02703 14.5661L2.97891 15.0022L3.50514 12.6468L1.55326 12.2107ZM5.06459 11.2531L2.46101 11.4311L2.5974 13.4264L5.20098 13.2485L5.06459 11.2531ZM5.27821 9.65099C4.85782 10.3626 4.49557 11.113 4.19807 11.8954L6.0675 12.6062C6.32426 11.9309 6.63703 11.283 7.00021 10.6682L5.27821 9.65099ZM3.82158 8.58767L5.31937 10.7322L6.95904 9.587L5.46125 7.44247L3.82158 8.58767ZM5.36401 5.50459L3.8595 7.39168L5.42332 8.63846L6.92784 6.75138L5.36401 5.50459ZM8.95682 6.18809L6.5215 5.20119L5.77035 7.05478L8.20567 8.04167L8.95682 6.18809ZM9.60238 5.01052C8.99996 5.42649 8.43019 5.8862 7.89763 6.38504L9.26486 7.84472C9.72544 7.41331 10.2181 7.01584 10.7388 6.65628L9.60238 5.01052ZM8.72619 3.41587L9.18596 6.00804L11.1552 5.65876L10.6955 3.06658L8.72619 3.41587ZM11.4223 1.26756L9.26365 2.34677L10.158 4.13567L12.3167 3.05646L11.4223 1.26756ZM14.4053 3.41052L12.6001 1.47916L11.1389 2.84486L12.9442 4.77621L14.4053 3.41052ZM16.0174 2.5394C15.1038 2.65942 14.2163 2.86332 13.3631 3.14317L13.9864 5.04356C14.7226 4.80209 15.4887 4.62604 16.2779 4.52237L16.0174 2.5394ZM15.8227 0.753321L15.1785 3.28421L17.1167 3.77756L17.7609 1.24668L15.8227 0.753321ZM27.3764 17.1217C27.3764 22.3275 23.1563 26.5477 17.9504 26.5477V28.5477C24.2608 28.5477 29.3764 23.4321 29.3764 17.1217H27.3764ZM17.9504 7.69568C23.1563 7.69568 27.3764 11.9158 27.3764 17.1217H29.3764C29.3764 10.8113 24.2608 5.69568 17.9504 5.69568V7.69568ZM8.52441 17.1217C8.52441 11.9158 12.7446 7.69568 17.9504 7.69568V5.69568C11.64 5.69568 6.52441 10.8113 6.52441 17.1217H8.52441ZM17.9504 26.5477C12.7446 26.5477 8.52441 22.3275 8.52441 17.1217H6.52441C6.52441 23.4321 11.64 28.5477 17.9504 28.5477V26.5477Z" fill="#144A3A"/>
+                      <rect x="9" y="11" width="33" height="27" rx="6" fill="#F4F6F6"/>
+                      <path d="M41.6797 12.2295H47.6391" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M44.6484 11.031L44.6484 12.1625" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M44.6484 17.8108L44.6484 20.0332" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M41.6797 17.8108H47.6391" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M19.7383 35.3977V37.9917" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M43.4844 41.4131V44.0071" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14 21.4501V31.5362C14 32.3188 14.6344 32.9532 15.4169 32.9532H24.0496C24.8321 32.9532 25.4665 32.3188 25.4665 31.5362V27.9101C25.4665 27.1276 26.1009 26.4932 26.8834 26.4932H36.3235C37.1061 26.4932 37.7405 27.1276 37.7405 27.9101V39.692C37.7405 40.4745 37.1061 41.1089 36.3235 41.1089H15.4169C14.6344 41.1089 14 41.7433 14 42.5258V46.0712C14 46.8538 14.6344 47.4881 15.4169 47.4881H47.6285C48.4111 47.4881 49.0454 46.8538 49.0454 46.0712V21.4501C49.0454 20.6676 48.4111 20.0332 47.6285 20.0332H15.4169C14.6344 20.0332 14 20.6676 14 21.4501Z" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="17.3125" y="32.9622" width="4.76422" height="2.2624" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="40.3086" y="41.1707" width="6.34832" height="3.07874" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="43.4828" cy="26.3841" r="3.17416" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="42.6406" y="12.2292" width="4.01597" height="5.58136" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="49.0469" y="23.21" width="2.47717" height="5.58136" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <rect x="51.5234" y="21.8899" width="2.47717" height="8.22128" rx="0.404839" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M16.5234 47.4883H46.6538V50.1604C46.6538 50.384 46.4726 50.5652 46.249 50.5652H16.9283C16.7047 50.5652 16.5234 50.384 16.5234 50.1604V47.4883Z" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M56 51H4" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M42.6119 13.9124L20.3008 19.8898" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="advantages__text">
+                    Собственное производство и технические разработки
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <svg width="58" height="52" viewbox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.0276 32.5287H32.9047L31.998 20.6416C31.9272 19.7133 31.2292 19 30.3919 19H20.9737C20.1363 19 19.4384 19.7133 19.3676 20.6416L18.4609 32.5287H23.2991" stroke="#144A3A" stroke-width="1.79688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M23.2976 32.5286H18.6119C17.7217 32.5286 17 33.2502 17 34.1404V35.3618C17 35.6878 17.2643 35.9522 17.5903 35.9522H33.7722C34.0982 35.9522 34.3625 35.6878 34.3625 35.3618V34.1404C34.3625 33.2502 33.6409 32.5286 32.7506 32.5286H28.026" stroke="#144A3A" stroke-width="1.79688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M32.9057 38.3798H18.4609V35.9521H32.9047L32.9057 38.3798Z" stroke="#144A3A" stroke-width="1.79688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M18.4609 38.3799V45.4375H20.3391L21.2611 38.3799H18.4609Z" stroke="#144A3A" stroke-width="1.79688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M32.9056 38.3799V45.4375H31.0274L30.1055 38.3799H32.9056Z" stroke="#144A3A" stroke-width="1.79688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.5 0V52" stroke="#144A3A" stroke-width="2" stroke-linejoin="round"/>
+                      <path d="M55 51H10" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M1 1L11 1" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M28 1L38 1" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 6H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 11H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 16H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 21H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M1 26L11 26" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 31H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 36H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 41H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M7 46H10.5" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M1 51L11 51" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M49.6933 24.7058H56.6484" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M50.3069 29.199H56.6484" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M48.8664 1C48.5352 4.95095 49.0983 15.2079 54 24.6283" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M40.9188 1C41.3328 13.705 45.6383 18.1983 50.9375 24.6283" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M49.8222 24.7072C35.3338 19.4679 32.6006 6.72293 33.045 1.00537H56.8164V46C55.3539 45.9933 51.6526 45.7778 48.5479 44.9688C45.4432 44.1599 43.9137 43.4367 43.5371 43.1762C46.227 41.5137 51.2498 35.4922 49.8222 24.7072Z" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="advantages__text">
+                    Делаем замеры зала, расстановку, сборку и установку кресел в зале
+                  </div>
+                </div>
+                <div class="advantages__item">
+                  <div class="advantages__icon">
+                    <svg width="52" height="52" viewbox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_17_1879)">
+                      <mask id="mask0_17_1879" style="mask-type:luminance" maskunits="userSpaceOnUse" x="0" y="0" width="52" height="52">
+                      <path d="M0 3.8147e-06H52V52H0V3.8147e-06Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_17_1879)">
+                      <path d="M7.0625 40.2188C10.9422 40.2188 13.5371 33.543 10.347 30.1021C9.07242 28.727 8.42445 26.7709 8.87742 24.6584C9.36492 22.3864 11.2377 20.5187 13.5117 20.0444C13.9576 19.9509 14.3973 19.9063 14.827 19.9063C18.1927 19.9063 20.9207 22.6342 20.9207 26C20.9207 27.6067 20.292 29.058 19.2713 30.1397C16.4428 33.1398 18.1095 40.2188 22.1902 40.2188" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M26 46.9219H3.65625V40.2188H26V46.9219Z" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                      <path d="M6.70312 46.9219V50.9844H22.9531V46.9219" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                      <path d="M42.25 38.7969C42.25 42.1627 39.522 44.8906 36.1562 44.8906C32.7905 44.8906 30.0625 42.1627 30.0625 38.7969C30.0625 35.4311 32.7905 32.7031 36.1562 32.7031C39.522 32.7031 42.25 35.4311 42.25 38.7969Z" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M20.9219 7.71875H30.0625" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M20.9219 13.8125H42.25" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.0156 19.9062H42.25" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M27.0156 26H42.25" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"/>
+                      <path d="M14.8281 19.9062V1.01562H36.8333" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                      <path d="M36.6641 1.01562H48.3437V50.9844H22.9531" stroke="#144A3A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+                      <path d="M51.1836 51H1.18359" stroke="#144A3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      </g>
+                      <defs>
+                      <clippath id="clip0_17_1879">
+                      <rect width="52" height="52" fill="white"/>
+                      </clippath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="advantages__text">
+                    Работаем по 44 и 223 ФЗ по 44 и 223 ФЗ
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section page-section--porfolio">
+          <div class="container">
+            <h2>Выполненные проекты</h2>
+            <div class="owl-carousel" id="portfolio-carousel">
+              <div class="portfolio-slide">
+                <div class="portfolio-slide__caption">
+                  <div class="portfolio-slide__title">Выборгский Дворец Культуры, г. Санкт-Петербург</div>
+                  <a href="#" class="btn btn--green">Подробнее</a>
+                </div>
+                <div class="portfolio-slide__image">
+                  <img src="img/portfolio-slide-01.jpg" alt>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-section page-section--video">
+          <div class="container">
+            <h2>Видео с производства</h2>
+            <div class="embed-responsive">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/HNpLuXOg7xQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </section>
+        <section class="page-section">
+          <div class="container">
+            <h2>Новости</h2>
+            <div class="news">
+              <div class="news__part-row">
+                <div class="news__part">
+                  <a href="page-article.html" class="news-card news-card--big">
+                    <div class="news-card__image">
+                      <img src="img/news-card-big-01.jpg" alt>
+                    </div>
+                    <div class="news-card__date"><span>1 мая 2023</span></div>
+                    <div class="news-card__title">Завод театрального оборудования открывает новый современный цех</div>
+                  </a>
+                </div>
+                <div class="news__part">
+                  <div class="news__row">
+                    <a href="page-article.html" class="news-card">
+                      <div class="news-card__image">
+                        <img src="img/news-card-01.jpg" alt>
+                      </div>
+                      <div class="news-card__date"><span>1 мая 2023</span></div>
+                      <div class="news-card__title">Завод театрального оборудования открывает новый современный цех</div>
+                    </a>
+                    <a href="page-article.html" class="news-card">
+                      <div class="news-card__image">
+                        <img src="img/news-card-02.jpg" alt>
+                      </div>
+                      <div class="news-card__date"><span>1 мая 2023</span></div>
+                      <div class="news-card__title">Завод театрального оборудования открывает новый современный цех</div>
+                    </a>
+                    <a href="page-article.html" class="news-card">
+                      <div class="news-card__image">
+                        <img src="img/news-card-03.jpg" alt>
+                      </div>
+                      <div class="news-card__date"><span>1 мая 2023</span></div>
+                      <div class="news-card__title">Завод театрального оборудования открывает новый современный цех</div>
+                    </a>
+                    <a href="page-article.html" class="news-card">
+                      <div class="news-card__image">
+                        <img src="img/news-card-04.jpg" alt>
+                      </div>
+                      <div class="news-card__date"><span>1 мая 2023</span></div>
+                      <div class="news-card__title">Завод театрального оборудования открывает новый современный цех</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__top">
+          <div class="container">
+            <div class="footer-links">
+              <div class="footer-links__col">
+                <div class="footer-links__title">Кресла</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">Театральные кресла</a></li>
+                  <li><a href="#">Секционные кресла</a></li>
+                  <li><a href="#">Кресла для актового зала</a></li>
+                  <li><a href="#">Стулья</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                  <li><a href="#">Материалы</a></li>
+                </ul>
+              </div>
+              <div class="footer-links__col">
+                <div class="footer-links__title">Механика сцены</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">Лебедки</a></li>
+                  <li><a href="#">Системы управления</a></li>
+                  <li><a href="#">Дороги занавесов</a></li>
+                  <li><a href="#">Софитные подъемы</a></li>
+                  <li><a href="#">Штанкетные подъемы</a></li>
+                  <li><a href="#">Блоки</a></li>
+                  <li><a href="#">Комплектующие</a></li>
+                </ul>
+              </div>
+              <div class="footer-links__col">
+                <div class="footer-links__title">Одежда сцены</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">Элементы одежды</a></li>
+                  <li><a href="#">Драпировка</a></li>
+                  <li><a href="#">Материалы</a></li>
+                  <li><a href="#">Костюмы для сцены</a></li>
+                </ul>
+              </div>
+              <div class="footer-links__col">
+                <div class="footer-links__title">О компании</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">История</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Сотрудники</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-info">
+              <div class="footer-info__col">
+                <div class="phone-box">
+                  <div class="phone-box__title">Телефоны в Челябинске</div>
+                  <a href="tel:+73512200180" class="phone-box__item">+7 (351) 220-01-80</a>
+                  <a href="tel:+73512200181" class="phone-box__item">+7 (351) 220-01-81</a>
+                </div>
+                <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
+              </div>
+              <div class="footer-info__col">
+                <p>Офис продаж: г. Челябинск, ул. Братьев Кашириных, д. 141-а</p>
+              </div>
+              <div class="footer-info__col">
+                <div class="social">
+                  <div class="social__item">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg width="41" height="41" viewbox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.214844 20.4045C0.214844 9.35885 9.16915 0.404541 20.2148 0.404541C31.2605 0.404541 40.2148 9.35885 40.2148 20.4045C40.2148 31.4502 31.2605 40.4045 20.2148 40.4045C9.16915 40.4045 0.214844 31.4502 0.214844 20.4045Z" fill="#4C6C91"/>
+                        <path d="M21.2598 26.968C21.2598 26.968 21.6448 26.926 21.842 26.7181C22.0225 26.5276 22.0162 26.1681 22.0162 26.1681C22.0162 26.1681 21.9922 24.4894 22.7863 24.2416C23.5688 23.9978 24.5736 25.8649 25.64 26.5829C26.4455 27.1258 27.057 27.0069 27.057 27.0069L29.9065 26.968C29.9065 26.968 31.3965 26.8779 30.6901 25.7277C30.6317 25.6335 30.278 24.8766 28.572 23.3218C26.7846 21.6944 27.0246 21.9576 29.1761 19.142C30.4867 17.4275 31.0105 16.3807 30.8466 15.9332C30.6912 15.505 29.7271 15.6187 29.7271 15.6187L26.5196 15.6382C26.5196 15.6382 26.2817 15.6064 26.1054 15.7099C25.9332 15.8113 25.8216 16.0479 25.8216 16.0479C25.8216 16.0479 25.3145 17.3742 24.6373 18.5029C23.2089 20.8832 22.6381 21.0092 22.4044 20.8617C21.8608 20.5165 21.9964 19.4769 21.9964 18.7385C21.9964 16.4309 22.3533 15.4692 21.3025 15.2203C20.954 15.1374 20.6974 15.0831 19.8052 15.0739C18.6606 15.0626 17.6923 15.0779 17.1435 15.3412C16.7783 15.5163 16.4966 15.9076 16.6687 15.9301C16.8806 15.9577 17.3605 16.0571 17.6151 16.3971C17.9438 16.8365 17.9323 17.8218 17.9323 17.8218C17.9323 17.8218 18.1212 20.538 17.4909 20.875C17.059 21.1065 16.4663 20.6343 15.1923 18.4742C14.5402 17.3681 14.0477 16.1452 14.0477 16.1452C14.0477 16.1452 13.9527 15.9168 13.7827 15.7939C13.5771 15.6454 13.2902 15.5993 13.2902 15.5993L10.2424 15.6187C10.2424 15.6187 9.78429 15.631 9.6163 15.8266C9.46709 15.9997 9.60482 16.3592 9.60482 16.3592C9.60482 16.3592 11.9911 21.8398 14.6936 24.6021C17.1717 27.1339 19.9847 26.968 19.9847 26.968H21.2598Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="social__item">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_21_718)"/>
+                        <path d="M16.3346 29.1667C15.6867 29.1667 15.7968 28.922 15.5733 28.3051L13.668 22.0343L28.3346 13.3333" fill="#C8DAEA"/>
+                        <path d="M16.332 29.1667C16.832 29.1667 17.0529 28.938 17.332 28.6667L19.9987 26.0737L16.6724 24.0678" fill="#A9C9DD"/>
+                        <path d="M16.6725 24.0683L24.7325 30.0232C25.6523 30.5307 26.3161 30.2679 26.5452 29.1693L29.826 13.7088C30.1619 12.3621 29.3127 11.7513 28.4328 12.1507L9.16782 19.5792C7.8528 20.1067 7.86047 20.8403 8.92812 21.1672L13.8719 22.7103L25.3174 15.4894C25.8578 15.1618 26.3537 15.3379 25.9466 15.6992" fill="url(#paint1_linear_21_718)"/>
+                        <defs>
+                        <lineargradient id="paint0_linear_21_718" x1="15.002" y1="1.668" x2="5.002" y2="25" gradientunits="userSpaceOnUse">
+                        <stop stop-color="#37AEE2"/>
+                        <stop offset="1" stop-color="#1E96C8"/>
+                        </lineargradient>
+                        <lineargradient id="paint1_linear_21_718" x1="17.4956" y1="21.2285" x2="19.6325" y2="28.141" gradientunits="userSpaceOnUse">
+                        <stop stop-color="#EFF7FC"/>
+                        <stop offset="1" stop-color="white"/>
+                        </lineargradient>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="social__item">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z" fill="#FF0000"/>
+                        <path d="M30.2195 15.061C29.9742 14.1185 29.2513 13.3763 28.3334 13.1244C26.6698 12.6667 19.9987 12.6667 19.9987 12.6667C19.9987 12.6667 13.3275 12.6667 11.6639 13.1244C10.746 13.3763 10.0231 14.1185 9.77773 15.061C9.33203 16.7692 9.33203 20.3333 9.33203 20.3333C9.33203 20.3333 9.33203 23.8973 9.77773 25.6056C10.0231 26.5482 10.746 27.2903 11.6639 27.5423C13.3275 28 19.9987 28 19.9987 28C19.9987 28 26.6698 28 28.3334 27.5423C29.2513 27.2903 29.9742 26.5482 30.2195 25.6056C30.6654 23.8973 30.6654 20.3333 30.6654 20.3333C30.6654 20.3333 30.6654 16.7692 30.2195 15.061Z" fill="white"/>
+                        <path d="M18 24V17.3333L23.3333 20.6668L18 24Z" fill="#FF0000"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="metrika-box">
+                  <img src="img/metriks-placeholder.png" alt>
+                </div>
+              </div>
+              <div class="footer-info__col">
+                <div class="min-logos">
+                  <img src="img/minkult-logo.png" alt>
+                  <img src="img/minobr-logo.png" alt>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="container">
+            <span>Copyright © 2023 Завод театрального оборудования</span>
+            <span><a href="#">Карта сайта</a></span>
+            <span><a href="#">Политика обработки персональных данных</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
