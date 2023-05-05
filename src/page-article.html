@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page text</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main">
+
+        <div class="container">
+
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="page-news.html" class="breadcrumbs__link">Новости</a></li>
+          </ul>
+
+          <article class="news-post">
+            <h1 class="news-post__title">Завод театрального оборудования открывает новый современный цех</h1>
+            <div class="news-post__date"><span>1 мая 2023</span></div>
+            <div class="news-post__image">
+              <img src="img/news-post-image-01.jpg" alt="">
+            </div>
+            <div class="news-post__text">
+              <p>Великолепные новости для всех любителей культуры и мероприятий! Комплекс зрительных и конференц залов был полностью оснащен современным оборудованием!</p>
+              <p>Теперь все залы оснащены новой звуковой системой и светодиодными экранами, которые обеспечивают превосходное качество звука и яркую картинку. Это просто незабываемый опыт, который подарит гостям по-настоящему потрясающее впечатление.</p>
+              <p>Кроме того, комплекс также обладает лучшими возможностями для проведения конференций, включая мощные проекторы, микрофоны, системы телеконференций и многое другое. Это означает, что гости смогут принимать участие в профессиональных мероприятиях на высшем уровне.</p>
+              <p>Команда зала убедительно приглашает всех посетить и оценить новое оснащение залов на практике. Приходите и насладитесь беспрецедентным уровнем комфорта и качества, который мы предоставляем. Мы обещаем, что Ваш визит будет незабываемым и приятным опытом.</p>
+            </div>
+          </article>
+        </div>
+
+        <section class="page-section page-section--news-carousel">
+          <div class="container">
+            <h2>Другие новости</h2>
+            <div class="owl-carousel" id="news-carousel">
+              <div class="news-slide">
+                <a href="page-article.html" class="news-card">
+                  <div class="news-card__image">
+                    <img src="img/news-card-01.jpg" alt="">
+                  </div>
+                  <div class="news-card__date"><span>1 мая 2023</span></div>
+                  <div class="news-card__title">Завод театрального оборудования открывает новый современный цех</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

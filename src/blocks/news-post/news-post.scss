@@ -1,0 +1,41 @@
+// В этом файле должны быть стили для БЭМ-блока news-post, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news-post {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 50px;
+    }
+
+    span {
+      color: #666666;
+      display: inline-block;
+      background: #EEEEEE;
+      font-size: 13px;
+      padding: 5px 12px;
+    }
+  }
+
+  &__text {
+    padding: 0 0 20px 0;
+
+    @media (min-width: $screen-lg) {
+      padding: 30px 0 30px 110px;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+  }
+}
