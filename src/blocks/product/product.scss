@@ -1,0 +1,95 @@
+// В этом файле должны быть стили для БЭМ-блока product, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+
+    @include row;
+    border-bottom: 1px solid #B9B9B9;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__col {
+    @include col();
+
+    &:first-child {
+      @include col(lg, 7);
+    }
+
+    &:last-child {
+      @include col(lg, 5);
+    }
+  }
+
+  &__options {
+    margin-bottom: 48px;
+  }
+
+  &__price {
+    margin-bottom: 24px;
+    display: flex;
+  }
+
+  &__price-value {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    white-space: nowrap;
+    line-height: 1.2;
+    margin-right: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    span {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 55px;
+    }
+  }
+
+  &__price-annotation {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777777;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  &__buy-actions {
+    margin-bottom: 24px;
+  }
+
+  &__object {
+    img {
+      display: block;
+    }
+    p {
+      margin: 12px 0;
+    }
+  }
+
+  &__action-links {
+
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-bottom: 8px;
+      text-decoration: none;
+      color: #144A3A;
+
+      svg {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+}

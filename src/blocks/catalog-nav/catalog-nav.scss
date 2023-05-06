@@ -1,0 +1,46 @@
+// В этом файле должны быть стили для БЭМ-блока catalog-nav, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.catalog-nav {
+
+  $block-name:                &; // #{$block-name}__element
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  >li {
+    margin-bottom: 24px;
+  }
+
+  >li>a {
+    font-family: $font-family--headings;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #144A3A;
+    text-decoration: none;
+  }
+
+  ul {
+    padding-top: 24px;
+    list-style: none;
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    li a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #222222;
+      text-decoration: none;
+
+      &:hover {
+        color: #2EB28B;
+      }
+    }
+  }
+}

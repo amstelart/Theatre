@@ -1,0 +1,103 @@
+// В этом файле должны быть стили для БЭМ-блока contacts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  &__location {
+    @include col();
+    @include col(lg, 8);
+
+    padding-right: 60px !important;
+  }
+
+  &__pin-group {
+    @include row;
+    margin-bottom: 30px;
+  }
+
+  &__pin {
+    @include col();
+    @include col(lg, 6);
+
+    opacity: 0.5;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__pin-inner {
+    position: relative;
+    padding-left: 25px;
+    max-width: 300px;
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+      top: 6px;
+      left: 0;
+    }
+  }
+
+  &__pin-title {
+    font-family: $font-family--headings;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  &__pin-address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    margin-bottom: 8px;
+  }
+
+  &__info {
+    @include col();
+    @include col(lg, 4);
+  }
+
+  &__info-part {
+    margin-bottom: 40px;
+  }
+
+  &__title-2 {
+    font-family: $font-family--headings;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 0 10px 0;
+  }
+
+  .contacts-phone {
+    font-family: $font-family--headings;
+    text-decoration: none;
+    color: #144A3A;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .contacts-email {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #144A3A;
+
+    svg {
+      vertical-align: middle;
+      margin-bottom: 2px;
+      margin-right: 8px;
+    }
+  }
+}
