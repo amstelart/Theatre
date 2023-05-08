@@ -1,0 +1,56 @@
+// В этом файле должны быть стили для БЭМ-блока callback-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.callback-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #144A3A;
+  color: #fff;
+  // padding: 40px;
+  background-image: url(../img/callback-box-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__caption {
+    padding: 40px 25px 40px 40px;
+    max-width: 450px;
+  }
+
+  &__title {
+    font-family: $font-family--headings;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__form {
+    padding: 40px 40px 40px 30px;
+    flex-grow: 1;
+  }
+
+  &__field-group {
+    @include row;
+  }
+
+  &__field {
+    @include col();
+    @include col(sm, 6);
+  }
+
+  &__field-actions {
+    text-align: right;
+  }
+}

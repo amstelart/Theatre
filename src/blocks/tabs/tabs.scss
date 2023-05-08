@@ -92,5 +92,42 @@ $field-padding-horizontal:    0.7em !default;
       }
     }
   }
+
+  &--product {
+
+    #{$block-name}__link-wrap {
+      &:not(:first-child) {
+        margin-left: 30px;
+      }
+    }
+
+    #{$block-name}__link-wrap,
+    #{$block-name}__content-wrapper {
+      border: none;
+    }
+
+    #{$block-name}__links:after {
+      background-color: transparent;
+    }
+
+    #{$block-name}__link {
+      background: transparent;
+      padding: 0.3em 0;
+    }
+    #{$block-name}__link-wrap {
+      border-bottom: 2px solid transparent
+    }
+    #{$block-name}__link-wrap--active {
+      border-color: #144A3A;
+
+      .tabs__link {
+        color: #144A3A;
+      }
+    }
+
+    #{$block-name}__content-wrapper {
+      padding: 15px 0;
+    }
+  }
 }
 

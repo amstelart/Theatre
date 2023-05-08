@@ -25,9 +25,21 @@
       @include col(lg, 5);
     }
   }
+  &__view {
+    max-width: 585px;
+  }
+
+  &__view,
+  &__object {
+    margin-right: 70px;
+  }
 
   &__options {
     margin-bottom: 48px;
+  }
+
+  &__options-title {
+    margin-top: 0;
   }
 
   &__price {

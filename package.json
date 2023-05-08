@@ -63,6 +63,7 @@
     "postcss-inline-svg": "^3.0.0",
     "postcss-object-fit-images": "^1.1.2",
     "stylelint": "^8.2.0",
+    "swiper": "^9.2.4",
     "vinyl-buffer": "^1.0.0",
     "yaspeller": "^4.0.0"
   },

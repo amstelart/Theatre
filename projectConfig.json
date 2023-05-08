@@ -72,14 +72,21 @@
     "catalog-nav": [],
     "product": [],
     "manager-card": [],
-    "contacts": []
+    "contacts": [],
+    "swiper": [],
+    "portfolio": [],
+    "portfolio-card": [],
+    "project": [],
+    "gallery-card": [],
+    "callback-box": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
-    "../../node_modules/nouislider/distribute/nouislider.css"
+    "../../node_modules/nouislider/distribute/nouislider.css",
+    "../../node_modules/swiper/swiper-bundle.min.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -95,6 +102,7 @@
     "./node_modules/owl.carousel/dist/owl.carousel.js",
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/swiper/swiper-bundle.min.js",
     "./node_modules/object-fit-images/dist/ofi.js"
   ],
   "addJsAfter": [

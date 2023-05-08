@@ -1,0 +1,65 @@
+// В этом файле должны быть стили для БЭМ-блока project, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.project {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__header-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  &__header-date {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__info {
+    @include row;
+  }
+
+  &__info-col {
+    @include col();
+    @include col(lg, 6);
+
+    &:first-child {
+
+      @media (min-width: $screen-lg) {
+
+        .project__info-item {
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+
+  &__info-title {
+    margin: 0;
+    @media (min-width: $screen-lg) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &__gallery {
+    @include row;
+  }
+
+  &__gallery-item {
+    @include col();
+    @include col(xs, 6);
+    @include col(md, 4);
+    margin-bottom: 20px;
+  }
+}
