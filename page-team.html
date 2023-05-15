@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Page team</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+  </script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item  main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  О компании
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href class="main-nav__link  main-nav__link--lvl-2">
+                        Контакты
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Продукция
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Комплексное оснащение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Решения
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-portfolio.html" class="main-nav__link">
+                  Портфолио
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-vacancy.html" class="main-nav__link">
+                  Сотрудничество
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="main-nav__toggler"><span></span></button>
+        </div>
+      </header>
+      <main role="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">О компании</a></li>
+          </ul>
+          <h1>Команда</h1>
+        </div>
+        <div class="team">
+          <section class="page-section">
+            <div class="container">
+              <div class="team__row">
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-02.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-03.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-04.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-05.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-06.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-07.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team__item">
+                  <div class="manager-card">
+                    <div class="manager-card__image">
+                      <img src="img/manager-card-image-08.jpg" alt>
+                    </div>
+                    <div class="manager-card__inner">
+                      <div class="manager-card__name">Екатерина Ефанова</div>
+                      <div class="manager-card__position">Специалист по продажам</div>
+                      <div class="manager-card__phone"><a href="tel:+79190000000">+7 919 000-00-00</a></div>
+                      <div class="manager-card__email"><a href="mailto:juliabardavelidze@gnail.com">juliabardavelidze@gnail.com</a></div>
+                      <div class="manager-card__social">
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.0957 10.488C1.0957 5.51747 5.12514 1.48804 10.0957 1.48804C15.0663 1.48804 19.0957 5.51747 19.0957 10.488C19.0957 15.4586 15.0663 19.488 10.0957 19.488C5.12514 19.488 1.0957 15.4586 1.0957 10.488Z" stroke="#144A3A"/>
+                              <path d="M10.5657 13.4417C10.5657 13.4417 10.739 13.4228 10.8277 13.3292C10.909 13.2435 10.9061 13.0817 10.9061 13.0817C10.9061 13.0817 10.8953 12.3263 11.2527 12.2148C11.6048 12.1051 12.057 12.9453 12.5368 13.2684C12.8993 13.5126 13.1745 13.4592 13.1745 13.4592L14.4568 13.4417C14.4568 13.4417 15.1273 13.4011 14.8094 12.8835C14.7831 12.8411 14.6239 12.5005 13.8562 11.8009C13.0519 11.0685 13.1599 11.187 14.1281 9.91996C14.7178 9.14843 14.9535 8.67739 14.8798 8.47598C14.8099 8.28332 14.376 8.33448 14.376 8.33448L12.9327 8.34324C12.9327 8.34324 12.8256 8.32895 12.7462 8.3755C12.6688 8.42113 12.6185 8.5276 12.6185 8.5276C12.6185 8.5276 12.3903 9.12446 12.0856 9.63237C11.4428 10.7035 11.186 10.7602 11.0808 10.6938C10.8362 10.5385 10.8972 10.0707 10.8972 9.73837C10.8972 8.69997 11.0578 8.26719 10.585 8.1552C10.4281 8.11786 10.3126 8.09344 9.91119 8.08929C9.39611 8.08422 8.96038 8.09113 8.7134 8.20958C8.54906 8.28839 8.42229 8.46446 8.49976 8.4746C8.59508 8.48704 8.81106 8.53175 8.92563 8.68476C9.07353 8.88249 9.06837 9.32587 9.06837 9.32587C9.06837 9.32587 9.15335 10.5482 8.86976 10.6998C8.67537 10.804 8.40867 10.5915 7.83537 9.61946C7.54191 9.12169 7.32028 8.57138 7.32028 8.57138C7.32028 8.57138 7.27756 8.4686 7.20102 8.4133C7.10852 8.34647 6.9794 8.32573 6.9794 8.32573L5.60789 8.33448C5.60789 8.33448 5.40176 8.34001 5.32616 8.42805C5.25902 8.50594 5.321 8.66771 5.321 8.66771C5.321 8.66771 6.39483 11.134 7.61093 12.377C8.72608 13.5163 9.99195 13.4417 9.99195 13.4417H10.5657Z" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="manager-card__social-item">
+                          <a class="manager-card__social-link" href="#" target="_blank">
+                            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="9.7561" r="9" stroke="#144A3A"/>
+                              <path d="M8.50206 11.5869L12.1291 14.2666C12.5429 14.495 12.8417 14.3767 12.9448 13.8823L14.4211 6.9251C14.5723 6.31908 14.1901 6.04422 13.7942 6.22398L5.12493 9.56681C4.53317 9.80416 4.53662 10.1343 5.01707 10.2814L7.24179 10.9758L12.3923 7.7264C12.6354 7.57896 12.8586 7.65823 12.6754 7.82078" fill="#144A3A"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__group-image">
+                <img src="img/team-group-image.jpg" alt>
+              </div>
+            </div>
+          </section>
+          <section class="page-section">
+            <div class="container">
+              <div class="about__row">
+                <div class="about__col about__col--caption-l">
+                  <p>Мы обеспечиваем гарантийную и всестороннюю поддержку служб эксплуатации, монтаж, испытания и обслуживание звукового, светового, мультимедиа оборудования. Проводим обследование и испытание систем нижней и верхней механики сцены с выдачей протоколов и рекомендаций обслуживания.</p>
+                  <p><b>Директор «Завода театрального оборудования» <br> Бардавелидзе И.М.</b></p>
+                </div>
+                <div class="about__col about__col--media">
+                  <img src="img/director-image.jpg" alt>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__top">
+          <div class="container">
+            <div class="footer-links">
+              <div class="footer-links__col">
+                <div class="footer-links__title">Кресла</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">Театральные кресла</a></li>
+                  <li><a href="#">Секционные кресла</a></li>
+                  <li><a href="#">Кресла для актового зала</a></li>
+                  <li><a href="#">Стулья</a></li>
+                  <li><a href="#">Аксессуары</a></li>
+                  <li><a href="#">Материалы</a></li>
+                </ul>
+              </div>
+              <div class="footer-links__col">
+                <div class="footer-links__title">Механика сцены</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">Лебедки</a></li>
+                  <li><a href="#">Системы управления</a></li>
+                  <li><a href="#">Дороги занавесов</a></li>
+                  <li><a href="#">Софитные подъемы</a></li>
+                  <li><a href="#">Штанкетные подъемы</a></li>
+                  <li><a href="#">Блоки</a></li>
+                  <li><a href="#">Комплектующие</a></li>
+                </ul>
+              </div>
+              <div class="footer-links__col">
+                <div class="footer-links__title">Одежда сцены</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">Элементы одежды</a></li>
+                  <li><a href="#">Драпировка</a></li>
+                  <li><a href="#">Материалы</a></li>
+                  <li><a href="#">Костюмы для сцены</a></li>
+                </ul>
+              </div>
+              <div class="footer-links__col">
+                <div class="footer-links__title">О компании</div>
+                <ul class="footer-links__list">
+                  <li><a href="#">История</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Сотрудники</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-info">
+              <div class="footer-info__col">
+                <div class="phone-box">
+                  <div class="phone-box__title">Телефоны в Челябинске</div>
+                  <a href="tel:+73512200180" class="phone-box__item">+7 (351) 220-01-80</a>
+                  <a href="tel:+73512200181" class="phone-box__item">+7 (351) 220-01-81</a>
+                </div>
+                <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
+              </div>
+              <div class="footer-info__col">
+                <p>Офис продаж: г. Челябинск, ул. Братьев Кашириных, д. 141-а</p>
+              </div>
+              <div class="footer-info__col">
+                <div class="social">
+                  <div class="social__item">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg width="41" height="41" viewbox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.214844 20.4045C0.214844 9.35885 9.16915 0.404541 20.2148 0.404541C31.2605 0.404541 40.2148 9.35885 40.2148 20.4045C40.2148 31.4502 31.2605 40.4045 20.2148 40.4045C9.16915 40.4045 0.214844 31.4502 0.214844 20.4045Z" fill="#4C6C91"/>
+                        <path d="M21.2598 26.968C21.2598 26.968 21.6448 26.926 21.842 26.7181C22.0225 26.5276 22.0162 26.1681 22.0162 26.1681C22.0162 26.1681 21.9922 24.4894 22.7863 24.2416C23.5688 23.9978 24.5736 25.8649 25.64 26.5829C26.4455 27.1258 27.057 27.0069 27.057 27.0069L29.9065 26.968C29.9065 26.968 31.3965 26.8779 30.6901 25.7277C30.6317 25.6335 30.278 24.8766 28.572 23.3218C26.7846 21.6944 27.0246 21.9576 29.1761 19.142C30.4867 17.4275 31.0105 16.3807 30.8466 15.9332C30.6912 15.505 29.7271 15.6187 29.7271 15.6187L26.5196 15.6382C26.5196 15.6382 26.2817 15.6064 26.1054 15.7099C25.9332 15.8113 25.8216 16.0479 25.8216 16.0479C25.8216 16.0479 25.3145 17.3742 24.6373 18.5029C23.2089 20.8832 22.6381 21.0092 22.4044 20.8617C21.8608 20.5165 21.9964 19.4769 21.9964 18.7385C21.9964 16.4309 22.3533 15.4692 21.3025 15.2203C20.954 15.1374 20.6974 15.0831 19.8052 15.0739C18.6606 15.0626 17.6923 15.0779 17.1435 15.3412C16.7783 15.5163 16.4966 15.9076 16.6687 15.9301C16.8806 15.9577 17.3605 16.0571 17.6151 16.3971C17.9438 16.8365 17.9323 17.8218 17.9323 17.8218C17.9323 17.8218 18.1212 20.538 17.4909 20.875C17.059 21.1065 16.4663 20.6343 15.1923 18.4742C14.5402 17.3681 14.0477 16.1452 14.0477 16.1452C14.0477 16.1452 13.9527 15.9168 13.7827 15.7939C13.5771 15.6454 13.2902 15.5993 13.2902 15.5993L10.2424 15.6187C10.2424 15.6187 9.78429 15.631 9.6163 15.8266C9.46709 15.9997 9.60482 16.3592 9.60482 16.3592C9.60482 16.3592 11.9911 21.8398 14.6936 24.6021C17.1717 27.1339 19.9847 26.968 19.9847 26.968H21.2598Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="social__item">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_21_718)"/>
+                        <path d="M16.3346 29.1667C15.6867 29.1667 15.7968 28.922 15.5733 28.3051L13.668 22.0343L28.3346 13.3333" fill="#C8DAEA"/>
+                        <path d="M16.332 29.1667C16.832 29.1667 17.0529 28.938 17.332 28.6667L19.9987 26.0737L16.6724 24.0678" fill="#A9C9DD"/>
+                        <path d="M16.6725 24.0683L24.7325 30.0232C25.6523 30.5307 26.3161 30.2679 26.5452 29.1693L29.826 13.7088C30.1619 12.3621 29.3127 11.7513 28.4328 12.1507L9.16782 19.5792C7.8528 20.1067 7.86047 20.8403 8.92812 21.1672L13.8719 22.7103L25.3174 15.4894C25.8578 15.1618 26.3537 15.3379 25.9466 15.6992" fill="url(#paint1_linear_21_718)"/>
+                        <defs>
+                        <lineargradient id="paint0_linear_21_718" x1="15.002" y1="1.668" x2="5.002" y2="25" gradientunits="userSpaceOnUse">
+                        <stop stop-color="#37AEE2"/>
+                        <stop offset="1" stop-color="#1E96C8"/>
+                        </lineargradient>
+                        <lineargradient id="paint1_linear_21_718" x1="17.4956" y1="21.2285" x2="19.6325" y2="28.141" gradientunits="userSpaceOnUse">
+                        <stop stop-color="#EFF7FC"/>
+                        <stop offset="1" stop-color="white"/>
+                        </lineargradient>
+                        </defs>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="social__item">
+                    <a href="#" target="_blank" class="social__link">
+                      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 20C0 8.9543 8.9543 0 20 0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20Z" fill="#FF0000"/>
+                        <path d="M30.2195 15.061C29.9742 14.1185 29.2513 13.3763 28.3334 13.1244C26.6698 12.6667 19.9987 12.6667 19.9987 12.6667C19.9987 12.6667 13.3275 12.6667 11.6639 13.1244C10.746 13.3763 10.0231 14.1185 9.77773 15.061C9.33203 16.7692 9.33203 20.3333 9.33203 20.3333C9.33203 20.3333 9.33203 23.8973 9.77773 25.6056C10.0231 26.5482 10.746 27.2903 11.6639 27.5423C13.3275 28 19.9987 28 19.9987 28C19.9987 28 26.6698 28 28.3334 27.5423C29.2513 27.2903 29.9742 26.5482 30.2195 25.6056C30.6654 23.8973 30.6654 20.3333 30.6654 20.3333C30.6654 20.3333 30.6654 16.7692 30.2195 15.061Z" fill="white"/>
+                        <path d="M18 24V17.3333L23.3333 20.6668L18 24Z" fill="#FF0000"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="metrika-box">
+                  <img src="img/metriks-placeholder.png" alt>
+                </div>
+              </div>
+              <div class="footer-info__col">
+                <div class="min-logos">
+                  <img src="img/minkult-logo.png" alt>
+                  <img src="img/minobr-logo.png" alt>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="container">
+            <span>Copyright © 2023 Завод театрального оборудования</span>
+            <span><a href="#">Карта сайта</a></span>
+            <span><a href="#">Политика обработки персональных данных</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

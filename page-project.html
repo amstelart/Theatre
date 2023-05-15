@@ -2,7 +2,7 @@
 <html class="no-js  page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Page portfolio</title>
+  <title>Page project</title>
   <meta name="description" content>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -49,9 +49,8 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page-header__inner">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
           <nav id="main-nav" class="main-nav" role="navigation">
-            <a href="index.html" class="logo"><img src="img/logo.png" alt></a>
-            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item  main-nav__item--active">
                 <a href="#" class="main-nav__link">
@@ -98,12 +97,12 @@
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
+                <a href="page-portfolio.html" class="main-nav__link">
                   Портфолио
                 </a>
               </li>
               <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
+                <a href="page-vacancy.html" class="main-nav__link">
                   Сотрудничество
                 </a>
               </li>
@@ -114,24 +113,33 @@
               </li>
             </ul>
           </nav>
+          <button class="main-nav__toggler"><span></span></button>
         </div>
       </header>
       <main role="main">
         <div class="container">
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Выполненные проекты</a></li>
-          </ul>
+          <div class="page-top">
+            <ul class="breadcrumbs page-top__breadcrumbs">
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">
+                <svg width="25" height="8" viewbox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.09567 3.64645C0.900403 3.84171 0.900403 4.15829 1.09567 4.35355L4.27765 7.53553C4.47291 7.7308 4.78949 7.7308 4.98475 7.53553C5.18001 7.34027 5.18001 7.02369 4.98475 6.82843L2.15633 4L4.98475 1.17157C5.18002 0.976311 5.18002 0.659729 4.98475 0.464466C4.78949 0.269204 4.47291 0.269204 4.27765 0.464466L1.09567 3.64645ZM24.3931 4.5C24.6692 4.5 24.8931 4.27614 24.8931 4C24.8931 3.72386 24.6692 3.5 24.3931 3.5L24.3931 4.5ZM1.44922 4.5L24.3931 4.5L24.3931 3.5L1.44922 3.5L1.44922 4.5Z"/>
+                </svg>
+                Главная</a></li>
+              <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">
+                <svg width="25" height="8" viewbox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.09567 3.64645C0.900403 3.84171 0.900403 4.15829 1.09567 4.35355L4.27765 7.53553C4.47291 7.7308 4.78949 7.7308 4.98475 7.53553C5.18001 7.34027 5.18001 7.02369 4.98475 6.82843L2.15633 4L4.98475 1.17157C5.18002 0.976311 5.18002 0.659729 4.98475 0.464466C4.78949 0.269204 4.47291 0.269204 4.27765 0.464466L1.09567 3.64645ZM24.3931 4.5C24.6692 4.5 24.8931 4.27614 24.8931 4C24.8931 3.72386 24.6692 3.5 24.3931 3.5L24.3931 4.5ZM1.44922 4.5L24.3931 4.5L24.3931 3.5L1.44922 3.5L1.44922 4.5Z"/>
+                </svg>
+                Выполненные проекты</a></li>
+            </ul>
+            <h1 class="page-top__title project__header-title">Государственный драматический Молодежный театр</h1>
+            <p class="project__header-date">г. Челябинск, 2021</p>
+          </div>
           <div class="project">
-            <div class="project__header">
-              <h1 class="project__header-title">Государственный драматический Молодежный театр</h1>
-              <p class="project__header-date">г. Челябинск, 2021</p>
-            </div>
             <div class="project__info">
               <div class="project__info-col">
                 <div class="project__info-item">
                   <h5 class="project__info-title">Особенности проекта:</h5>
-                  <ul class="project__info-list">
+                  <ul class="project__info-list content-list">
                     <li>Корректировки по проекту вносились уже после окончания строительных работ, полностью переделан раздел с механическим оборудованием сцены;</li>
                     <li>Монтаж закладных для подъемно-опускных механизмов проводился в законченном помещении, длина основной двутавровой балки 12 метров;</li>
                     <li>Система озвучивания зала с окружным звуком для показа кинофильмов;</li>
@@ -144,7 +152,7 @@
               <div class="project__info-col">
                 <div class="project__info-item">
                   <h5 class="project__info-title">Установленное оборудование:</h5>
-                  <ul class="project__info-list">
+                  <ul class="project__info-list content-list">
                     <li>Монтаж закладных для подъемно-опускных механизмов проводился в законченном помещении, длина основной двутавровой балки 12 метров;</li>
                     <li>Механика сцены: Imlight (Россия), Завод театрального оборудования (Россия);</li>
                     <li>Система управления постановочного освещения: Imlight (Россия), ETC (США);</li>
@@ -153,9 +161,9 @@
                 </div>
               </div>
             </div>
-            <div class="project__gallery">
+            <div class="project__gallery page-section">
               <div class="project__gallery-item">
-                <a href="#" class="gallery-card">
+                <a href="img/gallery-01-big.jpg" data-fancybox="gallery" data-caption="Название фотографии" class="gallery-card">
                   <img class="gallery-card__prev-image" src="img/gallery-01.jpg" alt>
                   <div class="gallery-card__overlay">
                     <div class="gallery-card__icon">
@@ -177,7 +185,7 @@
                 </a>
               </div>
               <div class="project__gallery-item">
-                <a href="#" class="gallery-card">
+                <a href="img/gallery-01-big.jpg" data-fancybox="gallery" data-caption="Название фотографии" class="gallery-card">
                   <img class="gallery-card__prev-image" src="img/gallery-01.jpg" alt>
                   <div class="gallery-card__overlay">
                     <div class="gallery-card__icon">
@@ -199,7 +207,7 @@
                 </a>
               </div>
               <div class="project__gallery-item">
-                <a href="#" class="gallery-card">
+                <a href="img/gallery-01-big.jpg" data-fancybox="gallery" data-caption="Название фотографии" class="gallery-card">
                   <img class="gallery-card__prev-image" src="img/gallery-01.jpg" alt>
                   <div class="gallery-card__overlay">
                     <div class="gallery-card__icon">
@@ -221,7 +229,7 @@
                 </a>
               </div>
               <div class="project__gallery-item">
-                <a href="#" class="gallery-card">
+                <a href="img/gallery-01-big.jpg" data-fancybox="gallery" data-caption="Название фотографии" class="gallery-card">
                   <img class="gallery-card__prev-image" src="img/gallery-01.jpg" alt>
                   <div class="gallery-card__overlay">
                     <div class="gallery-card__icon">
@@ -243,7 +251,7 @@
                 </a>
               </div>
               <div class="project__gallery-item">
-                <a href="#" class="gallery-card">
+                <a href="img/gallery-01-big.jpg" data-fancybox="gallery" data-caption="Название фотографии" class="gallery-card">
                   <img class="gallery-card__prev-image" src="img/gallery-01.jpg" alt>
                   <div class="gallery-card__overlay">
                     <div class="gallery-card__icon">
@@ -265,7 +273,7 @@
                 </a>
               </div>
               <div class="project__gallery-item">
-                <a href="#" class="gallery-card">
+                <a href="img/gallery-01-big.jpg" data-fancybox="gallery" data-caption="Название фотографии" class="gallery-card">
                   <img class="gallery-card__prev-image" src="img/gallery-01.jpg" alt>
                   <div class="gallery-card__overlay">
                     <div class="gallery-card__icon">
@@ -291,8 +299,64 @@
         </div>
         <section class="page-section page-section--project-carousel">
           <div class="container">
-            <h2>Другие проекты </h2>
+            <h2 class="mt-0">Другие проекты </h2>
             <div class="owl-carousel" id="project-carousel">
+              <div class="project-slide">
+                <a href="page-project.html" class="portfolio-card">
+                  <div class="portfolio-card__image">
+                    <img src="img/portfolio-card-img-08.jpg" alt>
+                  </div>
+                  <div class="portfolio-card__overlay"></div>
+                  <div class="portfolio-card__caption">
+                    <div class="portfolio-card__title">
+                      Выборгский Дворец культуры, г. Санкт-Петербург
+                    </div>
+                    <div class="portfolio-card__date">2021 год</div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-slide">
+                <a href="page-project.html" class="portfolio-card">
+                  <div class="portfolio-card__image">
+                    <img src="img/portfolio-card-img-08.jpg" alt>
+                  </div>
+                  <div class="portfolio-card__overlay"></div>
+                  <div class="portfolio-card__caption">
+                    <div class="portfolio-card__title">
+                      Выборгский Дворец культуры, г. Санкт-Петербург
+                    </div>
+                    <div class="portfolio-card__date">2021 год</div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-slide">
+                <a href="page-project.html" class="portfolio-card">
+                  <div class="portfolio-card__image">
+                    <img src="img/portfolio-card-img-08.jpg" alt>
+                  </div>
+                  <div class="portfolio-card__overlay"></div>
+                  <div class="portfolio-card__caption">
+                    <div class="portfolio-card__title">
+                      Выборгский Дворец культуры, г. Санкт-Петербург
+                    </div>
+                    <div class="portfolio-card__date">2021 год</div>
+                  </div>
+                </a>
+              </div>
+              <div class="project-slide">
+                <a href="page-project.html" class="portfolio-card">
+                  <div class="portfolio-card__image">
+                    <img src="img/portfolio-card-img-08.jpg" alt>
+                  </div>
+                  <div class="portfolio-card__overlay"></div>
+                  <div class="portfolio-card__caption">
+                    <div class="portfolio-card__title">
+                      Выборгский Дворец культуры, г. Санкт-Петербург
+                    </div>
+                    <div class="portfolio-card__date">2021 год</div>
+                  </div>
+                </a>
+              </div>
               <div class="project-slide">
                 <a href="page-project.html" class="portfolio-card">
                   <div class="portfolio-card__image">
@@ -329,7 +393,7 @@
                     <label class="field-text callback-box__field">
                       <span class="field-text__name">Ваш телефон</span>
                       <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" placeholder="placeholder" id name>
+                        <input class="field-text__input" type="text" placeholder="+7 (___) - ___ - __ - __" id name>
                       </span>
                     </label>
                   </div>
