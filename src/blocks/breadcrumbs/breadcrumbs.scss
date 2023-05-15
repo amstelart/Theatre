@@ -19,23 +19,27 @@ $text-color:                  hsl(0, 0%, 10%) !default;
     display: inline-block;
     margin-right: 0.6em;
     white-space: nowrap;
-
-    &:not(:last-child):after {
-      content: '>';
-      display: inline-block;
-      margin-left: 0.8em;
-      color: $gray;
-    }
   }
 
   &__link {
-    color: $text-color;
+    color: #666666;
     text-decoration: none;
+    font-size: 14px;
+
+    svg {
+      fill: #666666;
+      margin-right: 10px;
+    }
 
     &:hover,
     &:focus {
       color: $text-color;
       text-decoration: none;
+      color: #2EB28B;
+
+      svg {
+        fill: #2EB28B;
+      }
     }
   }
 }

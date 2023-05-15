@@ -1,0 +1,70 @@
+// В этом файле должны быть стили для БЭМ-блока accordion-group, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.accordion-group {
+
+  $block-name:                &; // #{$block-name}__element
+
+}
+
+.accordion-group {
+
+}
+
+.accordion-group__accordion {
+  margin: 0 0 0.25rem 0;
+  border-bottom: 1px solid #777777;
+}
+
+.accordion-group__accordion-heading {
+  margin: 0;
+}
+
+.accordion-group__accordion-btn {
+  font-family: $font-family--headings;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  background: transparent;
+  border: none;
+  display: block;
+  padding: 16px 16px 16px 0;
+  color: #144A3A;
+  text-align: left;
+  width: 100%;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    width: 16px;
+    height: 8px;
+    background-image: url(../img/accordion-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: 24px;
+    padding: 32px 32px 32px 0;
+  }
+}
+.accordion-group__accordion-btn:focus {
+
+}
+
+.accordion-group__accordion-panel {
+  padding: 10px 32px 32px 0;
+}
+
+.accordion-group__accordion-btn_expanded {
+  color: #000;
+  &:before {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}

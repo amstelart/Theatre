@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока clients-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.clients-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 40px;
+
+  &__logo {
+
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}

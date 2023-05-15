@@ -1,0 +1,47 @@
+// В этом файле должны быть стили для БЭМ-блока docs, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.docs {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: $screen-md) {
+      padding-right: 45%;
+      background-image: url(../img/docs-list-bg.svg);
+      background-repeat: no-repeat;
+      background-position: top right;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 20px;
+  }
+
+  &__list-link {
+    color: #144A3A;
+    text-decoration: none;
+    padding-left: 22px;
+    position: relative;
+    display: block;
+
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-image: url(../img/docs-icon.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      margin-right: 8px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+  }
+}

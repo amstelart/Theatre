@@ -16,5 +16,31 @@
 
   &__inner {
     @include container;
+    height: 60px;
+    display: flex;
+
+    @media (min-width: $menu-desktop-width) {
+      height: auto;
+    }
+
+    .logo {
+      align-self: center;
+      margin-right: auto;
+      img {
+        max-width: 128px;
+      }
+
+      @media (min-width: $menu-desktop-width) {
+        height: auto;
+        img {
+          max-width: 215px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $menu-desktop-width) {
+    padding: 0;
+    height: auto;
   }
 }

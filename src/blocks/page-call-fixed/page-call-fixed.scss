@@ -1,0 +1,34 @@
+// В этом файле должны быть стили для БЭМ-блока page-call-fixed, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-call-fixed {
+
+  $block-name:                &; // #{$block-name}__element
+
+  z-index: 100;
+  position: fixed;
+  right: -95px;
+  top: 170px;
+  display: none;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
+
+  &__btn {
+    background: #1B6A53;
+    transform: rotate(-90deg);
+    width: 247px;
+
+    span {
+      margin-left: 15px;
+      position: relative;
+    }
+
+    svg {
+      vertical-align: middle;
+      transform: rotate(90deg);
+    }
+  }
+}

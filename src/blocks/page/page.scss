@@ -24,7 +24,11 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 60px;
+    }
   }
 
   &__content {
@@ -94,4 +98,11 @@ img {
 
 .container {
   @include container;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mt-1 {
+  margin-top: 30px;
 }

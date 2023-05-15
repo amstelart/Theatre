@@ -14,7 +14,7 @@ $screen-lg:                   992px !default;
 $opacity:                     0.7 !default;
 $transition-time:             0.3s !default;
 
-$z-index-modal:               100 !default;
+$z-index-modal:               110;
 
 .js-modal-open {
   overflow: hidden;
@@ -71,18 +71,31 @@ $z-index-modal:               100 !default;
   }
 
   &__title {
+    font-family: $font-family--headings;
     margin-top: ($line-height / 2);
     margin-bottom: ($line-height / 2);
     font-size: $font-size--h4;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: 400;
     color: currentColor;
   }
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
+
+    &.close {
+      width: 20px;
+      height: 20px;
+
+      > span {
+        &:before,
+        &:after {
+          height: 2px;
+        }
+      }
+    }
   }
 
   &__body {
@@ -119,7 +132,54 @@ $z-index-modal:               100 !default;
   }
 }
 
+#modal-call {
 
+  .modal__dialog {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: $screen-lg) {
+      width: 407px;
+      height: auto;
+    }
+  }
+
+  .modal__header {
+    padding: 10px 40px 15px 40px;
+  }
+
+  .modal__body {
+
+    padding: 0 40px;
+
+    .field-text {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    .field-text__name {
+      font-size: 14px;
+      color: #777777;
+    }
+  }
+
+  .modal__footer {
+
+    padding: 10px 40px 10px 40px;
+
+    .field-actions {
+      display: block;
+      text-align: center;
+    }
+    .field-actions__text {
+      font-size: 14px;
+      color: #777777;
+      margin-bottom: 25px;
+    }
+  }
+}
 
 @keyframes modal-backdrop-show {
 

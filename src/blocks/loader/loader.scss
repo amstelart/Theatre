@@ -11,13 +11,18 @@ $gray-lightest:               hsl(0, 0%, 90%) !default;
 
   display: inline-block;
 
+  &__wrap {
+    text-align: center;
+    padding: 20px 0 40px;
+  }
+
   &:before {
     content: '';
     display: block;
-    width: 1em;
-    height: 1em;
-    border: 3px solid $gray-lightest;
-    border-top: 3px solid $gray-lighter;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #9DFFE2;
+    border-top: 3px solid #144A3A;
     border-radius: 50%;
     animation: loader-rotate 1s linear infinite;
   }

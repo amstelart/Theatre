@@ -88,4 +88,24 @@ $border-radius:               3px !default;
       border-color: $color-main;
     }
   }
+
+  &--green-light {
+    color: #fff;
+    background-color: $color-main--light;
+    border: 1px solid $color-main--light;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #2EB28B;
+      border-color: #2EB28B;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main--light;
+      border-color: $color-main--light;
+    }
+  }
 }

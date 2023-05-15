@@ -96,4 +96,65 @@
       margin-bottom: 10px;
     }
   }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 40px;
+
+    .owl-dot {
+      margin: 0 12px;
+
+      span {
+        width: 16px;
+        height: 16px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        background: transparent;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #fff;
+          background: #d3d3d3;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          opacity: 0.6;
+        }
+      }
+
+      &.active {
+
+        span {
+          background: #1B6A53;
+
+          &:before {
+            background: #fff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+#main-carousel {
+
+  .owl-dots {
+    margin-top: 0;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform:translateX(-50%);
+
+    span {
+      &:before {
+        background: #fff;
+      }
+    }
+  }
 }

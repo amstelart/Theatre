@@ -12,22 +12,38 @@
   background-image: url(../img/callback-box-bg.svg);
   background-repeat: no-repeat;
   background-position: center left;
+  background-size: cover;
 
   &__inner {
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-lg) {
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
   }
 
   &__caption {
-    padding: 40px 25px 40px 40px;
-    max-width: 450px;
+    padding: 40px 25px 10px 25px;
+
+    @media (min-width: $screen-lg) {
+      max-width: 450px;
+      padding: 40px 25px 40px 40px;
+    }
   }
 
   &__title {
     font-family: $font-family--headings;
+    font-size: 24px;
+    line-height: 1.2;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
     margin-bottom: 24px;
+
+    @media (min-width: $screen-md) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   &__text {
@@ -37,8 +53,12 @@
   }
 
   &__form {
-    padding: 40px 40px 40px 30px;
-    flex-grow: 1;
+    padding: 40px 25px 20px 25px;
+
+    @media (min-width: $screen-lg) {
+      padding: 40px 40px 40px 30px;
+      flex-grow: 1;
+    }
   }
 
   &__field-group {
@@ -47,10 +67,14 @@
 
   &__field {
     @include col();
-    @include col(sm, 6);
+    @include col(md, 6);
   }
 
   &__field-actions {
-    text-align: right;
+    text-align: center;
+
+    @media (min-width: $screen-lg) {
+      text-align: right;
+    }
   }
 }

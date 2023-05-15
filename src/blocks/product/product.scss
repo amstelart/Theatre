@@ -31,11 +31,19 @@
 
   &__view,
   &__object {
-    margin-right: 70px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 70px;
+    }
   }
 
   &__options {
-    margin-bottom: 48px;
+
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 48px;
+    }
   }
 
   &__options-title {
@@ -43,8 +51,14 @@
   }
 
   &__price {
-    margin-bottom: 24px;
-    display: flex;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      text-align: left;
+      margin-bottom: 24px;
+    }
   }
 
   &__price-value {
@@ -77,6 +91,11 @@
 
   &__buy-actions {
     margin-bottom: 24px;
+    text-align: center;
+
+    @media (min-width: $screen-md) {
+      text-align: left;
+    }
   }
 
   &__object {

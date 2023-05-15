@@ -1,0 +1,29 @@
+// В этом файле должны быть стили для БЭМ-блока page-top, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-top {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__breadcrumbs {
+    margin: 0;
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+  }
+}

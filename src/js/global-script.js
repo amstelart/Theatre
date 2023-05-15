@@ -2,23 +2,35 @@
 $( document ).ready(function() {
   // code
 
+  var mobileNav = new hcOffcanvasNav('#mobile-nav', {
+    customToggle: $('.main-nav__toggler'),
+    navTitle: 'Меню',
+    insertClose: false,
+    position: 'left'
+  });
+
+  $('.accordion-group').ariaAccordion({});
+
   $("#main-carousel").owlCarousel({
     items: 1,
-    nav: true,
+    nav: false,
+    dots: true,
     loop: true,
     center: false,
   });
 
   $("#portfolio-carousel").owlCarousel({
     items: 1,
-    nav: true,
+    nav: false,
+    dots: true,
     loop: true,
     center: false,
   });
 
   $("#other-products").owlCarousel({
     items: 4,
-    nav: true,
+    nav: false,
+    dots: true,
     margin: 20,
     loop: true,
     center: false,
@@ -43,7 +55,8 @@ $( document ).ready(function() {
 
   $("#news-carousel").owlCarousel({
     items: 4,
-    nav: true,
+    nav: false,
+    dots: true,
     margin: 20,
     loop: true,
     center: false,
@@ -68,19 +81,20 @@ $( document ).ready(function() {
 
   $("#project-carousel").owlCarousel({
     items: 4,
-    nav: true,
+    nav: false,
+    dots: true,
     margin: 20,
     loop: true,
     center: false,
     responsive : {
       0 : {
-        items: 2,
+        items: 1,
         nav: true,
         loop: true,
         center: true,
       },
       480 : {
-        items: 2,
+        items: 1,
       },
       768 : {
         items: 2,
@@ -93,6 +107,14 @@ $( document ).ready(function() {
 });
 
 // Изоляция без jQuery
+
+(function(){
+  // code
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+}());
+
 (function(){
   // code
   const swiper = new Swiper(".view-slider-thumbnail", {
@@ -109,6 +131,60 @@ $( document ).ready(function() {
     spaceBetween: 10,
     thumbs: {
       swiper: swiper,
+    },
+  });
+}());
+
+(function(){
+  // image carousel 01
+  const swiperImage01 = new Swiper(".image-slider-thumbnail--01", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    watchSlidesProgress: true,
+  });
+  const swiperImage012 = new Swiper(".image-slider--01", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiperImage01,
+    },
+  });
+  // image carousel 02
+  const swiperImage02 = new Swiper(".image-slider-thumbnail--02", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    watchSlidesProgress: true,
+  });
+  const swiperImage022 = new Swiper(".image-slider--02", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiperImage02,
+    },
+  });
+  // image carousel 03
+  const swiperImage03 = new Swiper(".image-slider-thumbnail--03", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    watchSlidesProgress: true,
+  });
+  const swiperImage032 = new Swiper(".image-slider--03", {
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiperImage03,
     },
   });
 }());

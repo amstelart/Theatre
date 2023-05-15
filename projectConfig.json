@@ -78,7 +78,19 @@
     "portfolio-card": [],
     "project": [],
     "gallery-card": [],
-    "callback-box": []
+    "callback-box": [],
+    "accordion-group": [],
+    "vacancy": [],
+    "about": [],
+    "clients-list": [],
+    "clients-card": [],
+    "image-slider": [],
+    "team": [],
+    "docs": [],
+    "page-top": [],
+    "page-call-fixed": [],
+    "color-switch": [],
+    "hc-offcanvas-nav": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -86,7 +98,8 @@
     "./src/scss/functions.scss",
     "../../node_modules/owl.carousel/dist/assets/owl.carousel.css",
     "../../node_modules/nouislider/distribute/nouislider.css",
-    "../../node_modules/swiper/swiper-bundle.min.css"
+    "../../node_modules/swiper/swiper-bundle.min.css",
+    "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -102,8 +115,11 @@
     "./node_modules/owl.carousel/dist/owl.carousel.js",
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/t-aria-accordion/dist/aria-accordion.min.js",
     "./node_modules/swiper/swiper-bundle.min.js",
-    "./node_modules/object-fit-images/dist/ofi.js"
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js",
+    "./node_modules/hc-offcanvas-nav/dist/hc-offcanvas-nav.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"

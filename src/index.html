@@ -3,12 +3,45 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Main page</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
 
 <body>
+
+  <nav id="mobile-nav">
+    <ul class="first-nav">
+      <li><a href="#">О компании</a></li>
+      <li><a href="#">Продукция</a>
+        <ul>
+          <li><a href="#">Кресла</a>
+            <ul>
+              <li><a href="#">Театральные кресла</a></li>
+              <li><a href="#">Секционные кресла</a></li>
+              <li><a href="#">Кресла для актового зала</a></li>
+              <li><a href="#">Стулья</a></li>
+              <li><a href="#">Аксессуары</a></li>
+              <li><a href="#">Материалы</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Механика сцены</a></li>
+          <li><a href="#">Одежда сцены</a></li>
+          <li><a href="#">Комплексное оснащение</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Комплексное оснащение</a></li>
+      <li><a href="#">Решения</a></li>
+      <li><a href="#">Портфолио</a></li>
+      <li><a href="#">Сотрудничество</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <ul class="bottom-nav">
+      <li><a href="tel:+73517009080" class="call-box__num">+7(351)700-90-80</a></li>
+      <li><a href="#modal-call" data-toggle="modal" class="call-box__link">Заказать звонок</a></li>
+    </ul>
+  </nav>
 
   <div class="page__inner">
 
@@ -22,17 +55,32 @@
           <div class="main-slide">
             <img src="img/main-slide-01.jpg" alt="">
             <div class="main-slide__title">Оснащение зала под ключ</div>
-            <a href="#" class="btn btn--green main-slide__btn">Выполненные проекты</a>
+            <a href="#" class="btn btn--green btn--green-light main-slide__btn">Выполненные проекты</a>
           </div>
           <div class="main-slide">
             <img src="img/main-slide-01.jpg" alt="">
             <div class="main-slide__title">Оснащение зала под ключ</div>
-            <a href="#" class="btn btn--green main-slide__btn">Выполненные проекты</a>
+            <a href="#" class="btn btn--green btn--green-light main-slide__btn">Выполненные проекты</a>
           </div>
           <div class="main-slide">
             <img src="img/main-slide-01.jpg" alt="">
             <div class="main-slide__title">Оснащение зала под ключ</div>
-            <a href="#" class="btn btn--green main-slide__btn">Выполненные проекты</a>
+            <a href="#" class="btn btn--green btn--green-light main-slide__btn">Выполненные проекты</a>
+          </div>
+          <div class="main-slide">
+            <img src="img/main-slide-01.jpg" alt="">
+            <div class="main-slide__title">Оснащение зала под ключ</div>
+            <a href="#" class="btn btn--green btn--green-light main-slide__btn">Выполненные проекты</a>
+          </div>
+          <div class="main-slide">
+            <img src="img/main-slide-01.jpg" alt="">
+            <div class="main-slide__title">Оснащение зала под ключ</div>
+            <a href="#" class="btn btn--green btn--green-light main-slide__btn">Выполненные проекты</a>
+          </div>
+          <div class="main-slide">
+            <img src="img/main-slide-01.jpg" alt="">
+            <div class="main-slide__title">Оснащение зала под ключ</div>
+            <a href="#" class="btn btn--green btn--green-light main-slide__btn">Выполненные проекты</a>
           </div>
         </div>
 
@@ -98,8 +146,8 @@
               </div>
             </div>
 
-            <h2>Наши преимущества</h2>
             <div class="advantages">
+              <h2 class="mt-1">Наши преимущества</h2>
               <div class="advantages__list">
                 <div class="advantages__item">
                   <div class="advantages__icon">
@@ -211,9 +259,48 @@
 
         <section class="page-section page-section--porfolio">
           <div class="container">
-            <h2>Выполненные проекты</h2>
+            <div class="page-section__header">
+              <h2 class="page-section__header-title mt-0">Выполненные проекты</h2>
+              <a href="#" class="page-section__header-more">Все проекты</a>
+            </div>
 
             <div class="owl-carousel" id="portfolio-carousel">
+              <div class="portfolio-slide">
+                <div class="portfolio-slide__caption">
+                  <div class="portfolio-slide__title">Выборгский Дворец Культуры, г. Санкт-Петербург</div>
+                  <a href="#" class="btn btn--green">Подробнее</a>
+                </div>
+                <div class="portfolio-slide__image">
+                  <img src="img/portfolio-slide-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="portfolio-slide">
+                <div class="portfolio-slide__caption">
+                  <div class="portfolio-slide__title">Выборгский Дворец Культуры, г. Санкт-Петербург</div>
+                  <a href="#" class="btn btn--green">Подробнее</a>
+                </div>
+                <div class="portfolio-slide__image">
+                  <img src="img/portfolio-slide-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="portfolio-slide">
+                <div class="portfolio-slide__caption">
+                  <div class="portfolio-slide__title">Выборгский Дворец Культуры, г. Санкт-Петербург</div>
+                  <a href="#" class="btn btn--green">Подробнее</a>
+                </div>
+                <div class="portfolio-slide__image">
+                  <img src="img/portfolio-slide-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="portfolio-slide">
+                <div class="portfolio-slide__caption">
+                  <div class="portfolio-slide__title">Выборгский Дворец Культуры, г. Санкт-Петербург</div>
+                  <a href="#" class="btn btn--green">Подробнее</a>
+                </div>
+                <div class="portfolio-slide__image">
+                  <img src="img/portfolio-slide-01.jpg" alt="">
+                </div>
+              </div>
               <div class="portfolio-slide">
                 <div class="portfolio-slide__caption">
                   <div class="portfolio-slide__title">Выборгский Дворец Культуры, г. Санкт-Петербург</div>
@@ -229,7 +316,7 @@
 
         <section class="page-section page-section--video">
           <div class="container">
-            <h2>Видео с производства</h2>
+            <h2 class="mt-0">Видео с производства</h2>
 
             <div class="embed-responsive">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/HNpLuXOg7xQ" frameborder="0" allowfullscreen=""></iframe>
@@ -239,7 +326,10 @@
 
         <section class="page-section">
           <div class="container">
-            <h2>Новости</h2>
+            <div class="page-section__header">
+              <h2 class="page-section__header-title mt-0">Новости</h2>
+              <a href="#" class="page-section__header-more">Все новости</a>
+            </div>
             <div class="news">
               <div class="news__part-row">
                 <div class="news__part">
@@ -296,7 +386,19 @@
       @@include('blocks/page-footer/page-footer.html')
     </div>
 
+    <div class="page-call-fixed">
+      <a href="#modal-call" data-toggle="modal" class="btn btn--green page-call-fixed__btn">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.98868 14.8574C5.28488 15.3114 4.4462 15.5093 3.61367 15.4177C2.78114 15.3261 2.00553 14.9507 1.41725 14.3545L0.902965 13.8516C0.677497 13.621 0.551254 13.3113 0.551254 12.9888C0.551254 12.6663 0.677497 12.3565 0.902965 12.1259L3.08582 9.96593C3.31451 9.74118 3.62232 9.61525 3.94296 9.61525C4.26361 9.61525 4.57142 9.74118 4.80011 9.96593C5.03073 10.1914 5.34044 10.3176 5.66296 10.3176C5.98549 10.3176 6.2952 10.1914 6.52582 9.96593L9.95439 6.53736C10.0688 6.42464 10.1596 6.29032 10.2216 6.14219C10.2836 5.99406 10.3155 5.83508 10.3155 5.6745C10.3155 5.51392 10.2836 5.35494 10.2216 5.20681C10.1596 5.05868 10.0688 4.92436 9.95439 4.81164C9.72964 4.58295 9.60371 4.27514 9.60371 3.9545C9.60371 3.63386 9.72964 3.32605 9.95439 3.09736L12.1258 0.925929C12.3564 0.700461 12.6662 0.574219 12.9887 0.574219C13.3112 0.574219 13.6209 0.700461 13.8515 0.925929L14.3544 1.44022C14.9506 2.02849 15.326 2.8041 15.4176 3.63663C15.5092 4.46917 15.3113 5.30784 14.8572 6.01164C12.4915 9.49819 9.48132 12.5006 5.98868 14.8574Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Заказать звонок</span>
+      </a>
+    </div>
+
   </div>
+
+  @@include('blocks/modal/modal.html')
+  @@include('blocks/to-top/to-top.html')
 
   @@include('_include/page_bottom.html')
 </body>

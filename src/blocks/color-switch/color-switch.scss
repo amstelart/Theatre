@@ -1,0 +1,120 @@
+// В этом файле должны быть стили для БЭМ-блока color-switch, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.color-switch {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #C0C0C0;
+      opacity: 0;
+    }
+
+    span {
+      border-radius: 50%;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: #C0C0C0;
+      border: 3px solid #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.active {
+      cursor: inherit;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &.color-01 {
+      &:before {
+        background: #328195;
+      }
+      span {
+        background: #328195;
+      }
+    }
+    &.color-02 {
+      &:before {
+        background: #AB1212;
+      }
+      span {
+        background: #AB1212;
+      }
+    }
+    &.color-03 {
+      &:before {
+        background: #DB4D4D;
+      }
+      span {
+        background: #DB4D4D;
+      }
+    }
+    &.color-04 {
+      &:before {
+        background: #154690;
+      }
+      span {
+        background: #154690;
+      }
+    }
+    &.color-05 {
+      &:before {
+        background: #64A7E4;
+      }
+      span {
+        background: #64A7E4;
+      }
+    }
+    &.color-06 {
+      &:before {
+        background: #E2E2E2;
+      }
+      span {
+        background: #E2E2E2;
+      }
+    }
+    &.color-07 {
+      &:before {
+        background: #9A672B;
+      }
+      span {
+        background: #9A672B;
+      }
+    }
+    &.color-08 {
+      &:before {
+        background: #448A4F;
+      }
+      span {
+        background: #448A4F;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// В этом файле должны быть стили для БЭМ-блока clients-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.clients-list {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    @include row;
+  }
+
+  &__item {
+    @include col();
+    @include col(lg, 3);
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}

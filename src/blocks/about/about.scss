@@ -1,0 +1,24 @@
+// В этом файле должны быть стили для БЭМ-блока about, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.about {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    @include row;
+  }
+
+  &__col {
+    @include col();
+    @include col(lg, 6);
+
+    &--caption-l {
+      padding-right: 120px !important;
+    }
+    &--caption-r {
+      padding-left: 120px !important;
+    }
+  }
+}

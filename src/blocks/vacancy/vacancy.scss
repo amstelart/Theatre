@@ -1,0 +1,80 @@
+// В этом файле должны быть стили для БЭМ-блока vacancy, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.vacancy {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-lg) {
+    background-image: url(../img/section-bg-03.svg);
+    background-repeat: no-repeat;
+    background-position: top 35px right;
+  }
+
+  &__accordion {
+    margin-bottom: 60px;
+  }
+
+  &__send {
+    background: #F4F6F6;
+    padding: 30px;
+    margin-bottom: 60px;
+
+    @media (min-width: $screen-lg) {
+      padding: 40px;
+    }
+  }
+
+  &__send-form {
+    .field-text__name {
+      color: #777777;
+    }
+    .field-actions {
+      text-align: center;
+
+      .btn {
+        margin-bottom: 0;
+
+        @media (min-width: $screen-md) {
+          margin-left: 35px;
+        }
+      }
+
+      @media (min-width: $screen-md) {
+        text-align: left;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .field-actions__text {
+      flex-grow: 1;
+      font-size: 14px;
+      color: #777777;
+      margin: 0.6875em 0 20px;
+
+      @media (min-width: $screen-md) {
+        margin: 0.6875em 0;
+      }
+    }
+  }
+
+  &__send-title {
+    margin-top: 0;
+  }
+
+  &__send-row {
+    @include row;
+  }
+
+  &__send-col {
+    @include col();
+    @include col(lg, 4);
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
