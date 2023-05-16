@@ -18,6 +18,7 @@
     @include container;
     height: 60px;
     display: flex;
+    position: relative;
 
     @media (min-width: $menu-desktop-width) {
       height: auto;

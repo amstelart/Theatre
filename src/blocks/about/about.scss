@@ -14,11 +14,41 @@
     @include col();
     @include col(lg, 6);
 
+    &--media {
+
+    }
+
     &--caption-l {
-      padding-right: 120px !important;
+
+      @media (min-width: $screen-xl) {
+        padding-right: 120px !important;
+      }
+      @media (min-width: $screen-lg) {
+        padding-right: 60px !important;
+      }
     }
     &--caption-r {
-      padding-left: 120px !important;
+
+      @media (min-width: $screen-xl) {
+        padding-left: 120px !important;
+      }
+      @media (min-width: $screen-lg) {
+        padding-left: 60px !important;
+      }
+    }
+
+    &--order-1 {
+      order: 1;
+      @media (min-width: $screen-lg) {
+        order: inherit;
+      }
+    }
+
+    &--order-2 {
+      order: 2;
+      @media (min-width: $screen-lg) {
+        order: inherit;
+      }
     }
   }
 }
