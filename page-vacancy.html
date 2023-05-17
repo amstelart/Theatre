@@ -56,6 +56,9 @@
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">
                   О компании
+                  <svg width="9" height="5" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.00005 8.99995L17 1" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </a>
                 <div class="main-nav__sublist-wrapper">
                   <div class="main-nav__sublist-container">
@@ -100,6 +103,9 @@
               <li class="main-nav__item">
                 <a href="#" class="main-nav__link">
                   Продукция
+                  <svg width="9" height="5" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9.00005 8.99995L17 1" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </a>
                 <div class="main-nav__sublist-wrapper">
                   <div class="main-nav__sublist-container">
@@ -507,9 +513,44 @@
         </ul>
       </nav>
 
+      <span id="bp_mobile" class="bp_checking"></span>
+
     </div>
 
   </div>
+
+  <div id="modal-call" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <form action="" class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Заказать обратный звонок</h4>
+        </div>
+        <div class="modal__body">
+          <label class="field-text">
+            <span class="field-text__name">Ваше имя</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__name">Ваш телефон</span>
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="+7 (___) - ___ - __ - __" id="" name="">
+            </span>
+          </label>
+        </div>
+        <div class="modal__footer">
+          <div class="field-actions">
+            <div class="field-actions__text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных</div>
+            <button class="btn btn--green-light">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <a href="#" class="to-top" id="toTop">↑</a>
   <script src="js/script.min.js"></script>
 
 </body>
