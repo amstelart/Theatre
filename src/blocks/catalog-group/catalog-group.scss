@@ -8,13 +8,24 @@
 
   &__row {
     @include row;
+
+    @media (max-width: $screen-md) {
+      margin-left: -3px;
+      margin-right: -3px;
+    }
   }
 
   &__item {
     @include col();
     @include col(lg, 3);
-    @include col(md, 6);
+    @include col(sm, 6);
     margin-bottom: 20px;
+
+    @media (max-width: $screen-md) {
+      padding-left: 3px;
+      padding-right: 3px;
+      margin-bottom: 6px;
+    }
 
     &--big {
       @include col(lg, 6);

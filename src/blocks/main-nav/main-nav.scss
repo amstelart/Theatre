@@ -76,6 +76,10 @@ $transition-time:             0.3s !default;
     background-color: #fff;
     color: $text-color;
 
+    svg {
+      vertical-align: middle;
+    }
+
     &:hover,
     &:focus {
       text-decoration: none;
@@ -84,20 +88,6 @@ $transition-time:             0.3s !default;
 
     @media (min-width: $menu-desktop-width) {
       padding: 36px 0.7em;
-    }
-
-    &--lvl-2 {
-
-      @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 1.2em;
-      }
-    }
-
-    &--lvl-3 {
-
-      @media (max-width: ($menu-desktop-width - 1)) {
-        padding-left: 2.4em;
-      }
     }
   }
 

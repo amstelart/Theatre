@@ -1,6 +1,25 @@
+
 // Если на проекте jQuery
 $( document ).ready(function() {
   // code
+
+  // Init slider gallery
+  mobileCarousel.init();
+
+  var shrinkHeader = 130;
+  var head = $('.page-header');
+  var heightHeader = head.height();
+  $(window).scroll(function() {
+    var scroll = $(this).scrollTop();
+    if ( scroll >= shrinkHeader ) {
+        // $('body').css('paddingTop',heightHeader);
+        head.addClass('shrink');
+      }
+      else {
+          // $('body').css('paddingTop',0);
+          head.removeClass('shrink');
+      }
+  });
 
   var mobileNav = new hcOffcanvasNav('#mobile-nav', {
     customToggle: $('.main-nav__toggler'),

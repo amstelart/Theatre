@@ -10,21 +10,52 @@
   background-repeat: no-repeat;
   background-position: bottom right;
 
-
   &__row {
-    @include row;
+    margin-bottom: 40px;
+
+    &:not(.owl-carousel) {
+      @include row;
+      margin-bottom: 0;
+
+      #{$block-name}__item {
+        @include col();
+        @include col(lg, 3);
+        @include col(md, 4);
+
+        margin-bottom: 40px;
+      }
+    }
   }
 
   &__item {
-    @include col();
-    @include col(lg, 3);
-    @include col(md, 4);
-
-    margin-bottom: 40px;
 
     .manager-card {
       display: flex;
       flex-direction: column;
     }
   }
+}
+
+
+/******************************************************
+  GALLERY
+*******************************************************/
+
+  /*** No slider ***/
+
+.myGallery:not(.owl-carousel) { margin-left:-20px; overflow:hidden; }
+.myGallery:not(.owl-carousel) .item { width:25%; padding-left:20px; margin-bottom:20px; float:left; }
+.myGallery:not(.owl-carousel) img { display:block; width:100%; }
+
+  /*** Slider ***/
+
+.myGallery.owl-carousel { /* Slider stuff here */ }
+
+/******************************************************
+  BREAKPOINTS TESTING
+*******************************************************/
+.bp_checking { display:none; }
+
+@media only screen and (max-width:991px) {
+  #bp_mobile { display:block; }
 }

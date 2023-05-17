@@ -11,11 +11,14 @@
   }
 
   &__row {
-    @include row;
 
-    .news-card {
-      @include col();
-      @include col(md, 6);
+    &:not(.owl-carousel) {
+      @include row;
+
+      .news-card {
+        @include col();
+        @include col(md, 6);
+      }
     }
   }
 

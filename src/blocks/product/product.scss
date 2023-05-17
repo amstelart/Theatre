@@ -19,10 +19,12 @@
 
     &:first-child {
       @include col(lg, 7);
+      @include col(md, 6);
     }
 
     &:last-child {
       @include col(lg, 5);
+      @include col(md, 6);
     }
   }
   &__view {
@@ -32,7 +34,7 @@
   &__view,
   &__object {
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       margin-right: 70px;
     }
   }

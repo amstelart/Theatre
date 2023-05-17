@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока mobile-carousel, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.mobile-carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+  }
+
+  .owl-stage{padding-left:0px !important;}
+}

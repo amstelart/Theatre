@@ -90,7 +90,8 @@
     "page-top": [],
     "page-call-fixed": [],
     "color-switch": [],
-    "hc-offcanvas-nav": []
+    "hc-offcanvas-nav": [],
+    "mobile-carousel": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -173,8 +173,8 @@ blockquote,
 pre,
 address,
 figure {
-  margin-top: ($line-height / 2);
-  margin-bottom: ($line-height / 2);
+  margin-top: $line-height;
+  margin-bottom: $line-height;
 }
 
 address {
@@ -239,7 +239,7 @@ mark {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 abbr[title] {
@@ -309,6 +309,12 @@ pre {
   }
 }
 
+ol {
+  li {
+    margin-bottom: 8px;
+  }
+}
+
 .lead-text {
   font-family: $font-family--headings;
   font-size: 18px;
@@ -316,5 +322,14 @@ pre {
 
   @media (min-width: $screen-lg) {
     font-size: 20px;
+  }
+}
+
+.two-columns-row {
+  @include row;
+
+  .col {
+    @include col();
+    @include col(md, 6);
   }
 }

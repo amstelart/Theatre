@@ -7,14 +7,18 @@
   $block-name:                &; // #{$block-name}__element
 
   &__list {
-    @include row;
+    &:not(.owl-carousel) {
+      @include row;
+
+      #{$block-name}__item {
+        @include col();
+        @include col(lg, 3);
+        @include col(md, 6);
+      }
+    }
   }
 
   &__item {
-    @include col();
-    @include col(lg, 3);
-    @include col(md, 6);
-
     display: flex;
     margin-bottom: 25px;
   }
