@@ -7,7 +7,38 @@
   $block-name:                &; // #{$block-name}__element
 
   &__inner {
+    position: relative;
+    padding-right: 115px;
+    overflow: hidden;
+    height: 40px;
 
+    &.more {
+      height: auto;
+
+      #{$block-name}__btn {
+        &:after {
+          content: '⇡●';
+        }
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    padding: 5px 0;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+
+    &:before {
+      content: "Все цвета";
+      color: #144A3A;
+    }
+    &:after {
+      content: '⇣●';
+      color: #144A3A;
+      margin-left: 10px;
+    }
   }
 
   &__item {

@@ -123,6 +123,11 @@ $( document ).ready(function() {
       }
     }
   });
+
+  // toggle lk-history
+	$('.color-switch__btn').click(function(){
+		$(this).closest(".color-switch__inner").toggleClass("more");
+	});
 });
 
 // Изоляция без jQuery
