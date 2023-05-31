@@ -515,12 +515,13 @@
                   <textarea class="field-text__input" name="" id="" cols="30" rows="7"></textarea>
                 </span>
               </label>
-              <label class="field-text">
-                <span class="field-text__name">Прикрепить файл</span>
-                <span class="field-text__input-wrap">
-                  <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
-                </span>
-              </label>
+              <div class="field-file">
+                <div class="field-file__name">Прикрепить файл</div>
+                <label class="field-file__input-wrap">
+                  <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
+                  <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+                </label>
+              </div>
             </div>
           </div>
         </div>
