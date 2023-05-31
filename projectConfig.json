@@ -91,7 +91,9 @@
     "page-call-fixed": [],
     "color-switch": [],
     "hc-offcanvas-nav": [],
-    "mobile-carousel": []
+    "mobile-carousel": [],
+    "sitemap": [],
+    "certificate": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

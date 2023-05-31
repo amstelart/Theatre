@@ -33,6 +33,7 @@
   &__list-item {
     @include col();
     @include col(sm, 6);
+    @include col(xs, 6);
     margin-bottom: 35px;
   }
 }

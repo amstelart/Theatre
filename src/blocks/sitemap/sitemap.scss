@@ -1,0 +1,59 @@
+// В этом файле должны быть стили для БЭМ-блока sitemap, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.sitemap {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 40px;
+
+  &__row {
+    @include row;
+
+    padding-top: 40px;
+    margin-top: 0;
+
+    &:not(:first-child) {
+      border-top: 1px solid #B9B9B9;
+      margin-top: 40px;
+    }
+  }
+
+  &__col {
+    @include col();
+    @include col(lg, 3);
+    @include col(sm, 6);
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+
+      margin-bottom: 10px;
+
+      @media (min-width: $screen-lg) {
+        margin-bottom: 20px;
+      }
+      @media (min-width: $screen-sm) {
+        margin-bottom: 15px;
+      }
+    }
+
+    a {
+      color: #144A3A;
+      text-decoration: none;
+
+      &:hover {
+        color: #2EB28B;
+      }
+
+      @media (min-width: $screen-sm) {
+
+      }
+    }
+  }
+}

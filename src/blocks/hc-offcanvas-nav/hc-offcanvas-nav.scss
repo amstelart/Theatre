@@ -37,71 +37,34 @@
     color: #fff;
     font-family: $font-family--headings;
   }
+}
 
-  // .nav-content {
-  //   // padding-top: 78px;
-  //   background: #F6F7F9;
-  //   @include container;
-  // }
+.hc-nav-trigger span {
+  background: transparent;
+}
 
-  // .nav-title {
-  //   font-weight: 700;
-  //   font-size: 20px;
-  //   line-height: 24px;
-  //   color: #989EAC;
-  //   margin: 0;
-  //   padding: 25px 12px 15px 12px;
-  //   background: #fff;
-  // }
+.hc-nav-trigger span::before,
+.hc-nav-trigger span::after {
+  background: #222222;
+  border-radius: 3px;
+  height: 3px;
+}
+.hc-nav-trigger span::before {
+  width: 85%;
+  left: 4px;
+  top: -5px;
+}
 
-  // .first-nav {
-  //   padding:  0 12px;
-  //   background-color: #fff;
+.hc-nav-trigger span::after {
+  width: 100%;
+  bottom: -5px;
+}
 
-  //   .nav-item {
-  //     &:not(:last-child) {
-  //       .nav-item-wrapper {
-  //         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  //       }
-  //     }
-  //   }
-
-  //   .nav-item-link {
-  //     display: block;
-  //     font-weight: 400;
-  //     font-size: 14px;
-  //     line-height: 26px;
-  //     color: #191D25;
-  //     padding: 12px 0;
-  //     position: relative;
-
-  //     &:after {
-  //       content: "";
-  //       position: absolute;
-  //       top: 50%;
-  //       transform: translateY(-50%);
-  //       right: 0;
-  //       width: 16px;
-  //       height: 16px;
-  //       background-image: url(../img/pagination-next-icon.svg);
-  //     }
-  //   }
-  // }
-
-  // .bottom-nav {
-  //   padding: 24px 12px 64px 12px;
-  //   .call-box__num {
-  //     font-weight: 700;
-  //     font-size: 24px;
-  //     line-height: 32px;
-  //     color: #191D25;
-  //   }
-  //   .call-box__link {
-  //     font-weight: 400;
-  //     font-size: 14px;
-  //     line-height: 18px;
-  //     color: #4697DD;
-  //     text-decoration: underline;
-  //   }
-  // }
+.hc-nav-trigger.toggle-open span::before {
+  top: -10px;
+  width: 100%;
+  left: 0;
+}
+.hc-nav-trigger.toggle-open span::after {
+  bottom: -9px;
 }
